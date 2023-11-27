@@ -1,18 +1,26 @@
-<h3> HARD-LINKS </h3>
+<h2> HARD-LINKS: </h2>
 
-What is hard link?
+<h2> What is a Hard link? </h2>
+<br>
 A hard link is a mechanism in file systems that allows associating multiple entries (filenames) with the same underlying data blocks on disk.
-Essentially, it creates additional references to an existing inode, which contains information about a file.
+Essentially, it creates additional references to an existing inode, which contains information about a file. In simple terms, it's creating a shortcut to a specfic file path of your choice, making it eaiser to access by just Hard link name.
 
 All hard links to a file share the same inode, and changes made to any of the hard links are reflected in all other hard links, as they point to the same data.
 
 
-To Create Hard link, use "ln" followed by the path to the file you are wanting to link, and lastly the name of the hard-link. This will associate a link to the specified path. 
+<h2>How to create a Hard link?</h2> 
+<br>
+To Create Hard link, use "ln" which stands for "link" followed by the path to the file you are wanting to link, and lastly the name of the hard-link, which can be of your choice.  
 
 ```		 
 ln  /origin/path/file hardlink-name
 ```
-To remove the symbolic link
+
+<h2>What now? </h2>
+<br>
+You have successfully created a Hard link, now when you "ls -al" to list all, you will see a link name beside the file path.
+
+To remove the Hard Link use "rm" command, -i = interactive
 ```
 rm -i hardlink_name
 ```
