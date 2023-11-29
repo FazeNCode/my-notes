@@ -3,7 +3,8 @@
 <h2> What is a Hard link? </h2>
 <br>
 A hard link is a mechanism in file systems that allows associating multiple entries (filenames) with the same underlying data blocks on disk.
-Essentially, it creates additional references to an existing inode, which contains information about a file. In simple terms, it's creating a shortcut to a specfic file path of your choice, making it eaiser to access by just Hard link name.
+Essentially, it creates additional references to an existing inode, which contains information about a file.
+In simple terms, it's creating a shortcut to a specfic file path using the file paths inode and data bolocks of your choice.
 
 All hard links to a file share the same inode, and changes made to any of the hard links are reflected in all other hard links, as they point to the same data.
 
