@@ -6,7 +6,7 @@ A hard link is a mechanism in file systems that allows associating multiple entr
 Essentially, it creates additional references to an existing inode, which contains information about a file.
 In simple terms, it's creating a shortcut to a specfic file path using the file paths inode and data bolocks of your choice.
 
-All hard links to a file share the same inode, and changes made to any of the hard links are reflected in all other hard links, as they point to the same data.
+All hard links to a file, share the same inode, and changes made to any of the hard links are reflected in all other hard links, as they point to the same data.
 
 
 <h2>How to create a Hard link?</h2> 
@@ -34,10 +34,11 @@ stat /folder/filename.jpg
 Key-Notes:
 Hard-links can only be used on files NOT folders.
 Hard links can only exist on files that have the same file system.
+To completely remove a hard link, it must be deleted by removing the corresponding directory entry that points to the inode
 
-Some file type examples: xfs, xt2 exFAT, ntfs etc...
+File System E.G: xfs, xt2, xt3 ,xt4, ufs, exfat, ntfs
 
-To completely remove a hard-link, it must be deleted from all users that have the hard-link associated to the inode number
+
 
 
 
