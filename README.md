@@ -1,2 +1,2 @@
-# my-notes
-Repo containing my notes
+# Repo containing my notes
+
