@@ -7,8 +7,8 @@ SegFault (Access Violation) is an error that occurs when a program attempts to r
 
 <h2> What is GCC? <h/2>
 <br>
-Gnu Comipler Collection is a open-source comipler system  which is used to comiple variety languages, such as
-C/C++, GO, Assembly, ADA, Rust, and more.
+Gnu Comipler Collection is a open-source comipler system  which is used to comiple variety languages, such as C/C++, GO, Assembly, ADA, Rust, and more, also contains various libraries, such as glibc libgc GDB 
+
 
 Compilation Process:
 - Preprocessing: Handles tasks which include header files, macro expansion and conditional compilation
