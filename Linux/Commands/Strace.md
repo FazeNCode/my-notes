@@ -1,4 +1,3 @@
-
 What is strace used for?
 Strace is used for system calls. 
 
