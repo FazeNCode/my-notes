@@ -64,6 +64,7 @@ Display a query of information of nodejs package
 yum repoquery -l nodejs
 ```
 
+
 <h6> YUM-Installs: </h6>
 
 Mail Transfer Agent (MTA)  /etc/postfix/main.cf
