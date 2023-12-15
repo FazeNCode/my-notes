@@ -71,7 +71,7 @@ Kill the process on a user
 --->
 
 
-<h6> Adding_User: </h6>
+<h6> Adding User: </h6>
 Create a user with a non-interactive shell
 ```
 adduser user_name -s /sbin/nologin 
@@ -98,7 +98,7 @@ echo -e “john” | passwd --stdin “12345”
 ```
 
 
-<h6> Deleting_User: </h6>
+<h6> Deleting User: </h6>
 
 Remove the user named username from the group sudo.
 ```
