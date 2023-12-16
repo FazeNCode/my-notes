@@ -58,48 +58,95 @@ The “-iflist” option is used to display routes and host interface informatio
 
 <h2> Network Manager Command Line Interface (NMCLI) </h3> 
 
-Oracle/Redhat/Centos/Fedora 
+<h4> Used on enterprise linux distros such as Oracle/Redhat/Centos/Fedora  </h4>
+
+<br>
 The GUI version of nmcli 
 ```
 nmtui
 ```
 
-curl cheat.sh/nmcli
 Display a cheat-sheet for nmcli configuration
+```
+curl cheat.sh/nmcli
+```
+
+Show the state, and various  of the interface described  connection information 
+```
 nmcli con show [ens160] <----- 
-Show the connection information 
+```
+
+Show the permissions of the connected NIC 
+```
 nmcli general permissions
-Show the connection permissions
-nmcli general status
+```
+
 View the status of the state 
+```
+nmcli general status
+```
+
+Check the status of connected and disconnected NIC devices.
+```
 nmcli dev
-Check the status of the device
+```
+
+To add a and apply an interface  to a network adapter.
+```
 nmcli con add con-name “en2” ifname “eth0” type "ethernet"  ipv4.adresses 10.0.0.1/24 ipv4.gateway 10.0.0.1
+```
 
-
+Delete the configured interface for the particular connection-name specified
+```
 nmcli con delete [Name]
-Delete the configured settings for the particular connection-name specified
+```
 
 
-
+Once the settings have been configured properly, you can bring the interface up to utilize it,
+```
 nmcli con up [Name] <----- NETWORK-ADAPTER-NAME
-Once the settings have been configured properly, you can bring the network-up to utilize it,
-nmcli con mod [Name] +ipv4.addresses 10.0.0.75/24
-The option to associate another ip address 
+```
+
+Assign a secondary, ip address to the interface
 - Remove
 + Add
-nmcli con mod [Name] connection.autoconnect yes
-Configure the auto-connect capabilities for the given con-name
-nmcli con mod “current-name” connection.id “new-name”
 
+```
+nmcli con mod [Name] +ipv4.addresses 10.0.0.75/24
+```
+
+Configure the auto-connect capabilities for the given interface name
+```
+nmcli con mod [Name] connection.autoconnect yes
+```
+
+
+```
+nmcli con mod “current-name” connection.id “new-name”
+```
+
+Puts the nic (network interface card) into active state for Debian based Dsitros such as Ubuntu, Kali, Mint.
+
+```
 ifup nicname 
-Will bring the nic (network interface card) up and running
-If the error below occurs, 
+```
+
+
+If the error below occurs,
 “ linux unknown error /etc/sysconfig/network-scripts/ “
 This means that there is a conflict with the UUID.
-ifdown nicname 
-Will bring the nic (network interface card) down
 
-uuidgen [NIC-Name]
+Puts the nic (network interface card) into deactived state. for Debian based Dsitros such as Ubuntu, Kali, Mint.
+
+```
+ifdown nicname 
+```
+
+
 Will generate a new uuid, which you can input into 
+
 /etc/sysconfig/network-scripts/
+```
+uuidgen [NIC-Name]
+```
+
