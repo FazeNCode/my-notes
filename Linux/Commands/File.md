@@ -1,5 +1,21 @@
-  <h3> Create Files: </h3>
- 
+  <h2> Create Files: </h2>
+
+
+  ### Create Files:
+
+Create a hidden file, put a . before the file name:
+
+```bash
+touch .filename.txt
+```
+Create multiple files, in this scenario, we create 10 files
+
+  ```bash
+touch filename{1..10}
+```
+
+
+```
  Create a hidden file, put a . before the file name
 ```
 touch .filename.txt
@@ -17,18 +33,19 @@ Create a file with a dash
 touch -- -filename
  ```
 
- <h3> Remove Files: </h3>
+ <h2> Remove Files: </h2>
 Remove file with a dash
 ```
 rm -rf -- -filename	
- ```
+```
+
 Remove all file except file1
 ```
 rm -rf !(file1)		
 ```
 
 
- <h3> Display Files: </h3>
+ <h2> Display Files: </h2>
 
 To display the content inside the file, cat is short for "concatenate and print", you can also use cat to redirect input and out from the console to a file.
 
@@ -54,26 +71,17 @@ stat /path/of/file
 ```
 
 
- <h3> Copy Files: </h3>
+ <h2> Copy Files: </h2>
 
 Copy a file [-r] flag is for recursive, meaning copy everything I target. -a flag keeps the attributes of the file or directory, such as the timestap, permissions.
 ```
 cp -r -a  /src/file /destination/file .
 ```
 
-
-
-
-
-
 Copy files from a remote machine (Linux) to a local machine (Windows), [-r] recursive  [-v] verbose
-
-
 ```
 scp -rv faze@192.168.204.106:/home/faze/file C:\Users\Faisa\Desktop
 ```
-
-
 
 Stat command will display detailed information about the specific file, such as inode, creation date, permissions, etc..
 ```
