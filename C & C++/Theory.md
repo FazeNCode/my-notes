@@ -5,7 +5,7 @@ SegFault (Access Violation) is an error that occurs when a program attempts to r
 
 
 
-<h2> What is GCC? <h/2>
+<h2> What is GCC? </h2>
 <br>
 Gnu Comipler Collection is a open-source comipler system  which is used to comiple variety languages, such as C/C++, GO, Assembly, ADA, Rust, and more, also contains various libraries, such as glibc libgc GDB 
 
@@ -21,7 +21,6 @@ C / C++. Allowing user to inspect the behavior of a program durring execution, e
 
 
 <h2> What is a MakeFile? </h2>
-<br>
 Makefile is utilized for running multiple c and or, c++ script files for automated tasks, without the need to call each indivdual ".cpp" file in the command.
 
 <h3>What is .cpp? </h3>

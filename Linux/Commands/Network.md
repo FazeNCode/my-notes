@@ -25,33 +25,44 @@ Print the routing table, this tells users where traffic exits.
 route 
 ```
 
-netstat is a powertool which can be used to display various important network related information, such as open ports, connected ports, type of protcol, routing and more. 
+Netstat is a powertool which can be used to display various important network related information, such as open ports, connected ports, type of protcol, routing and more. 
 
--a all  | - n network | -t tcp  | - p protocol | -r routing | -l listening
+- a all 
+- n network  
+- t tcp  
+- p protocol 
+- r routing 
+- l listening
+
 ```
 netstat -antperl 
 ```
 
 nmap is a useful utility tool which can scan for open ports 
-- p port  | -p- scans all ports 0-65535 
+- p port  
+- -p- scans all ports 0-65535 
 ```
 nmap -p 1-100 10.0.0.77 
 ```
 
-Will remove the specified, port
-- k kill  | - n number port
+Removes the specified port
+- k kill 
+- n number port
 ```
 fuser -k -n tcp 22 
 ```
 
+<br>
+The “-iflist” option is used to display routes and host interface information. 
 ```
 nmap -iflist
 ```
 
-The “-iflist” option is used to display routes and host interface information. 
 
 
 
+<br>
+<br>
 
 
 
