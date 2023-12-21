@@ -16,9 +16,9 @@ Creates a branch but remains in the current branch
 git branch -M branch-name
 ```
 
-Clones a remote repository to your local machine
+Clones a remote repository to your local machine by giving the path (URL) of your repository from github 
 ```
-git clone https://github.com/F-Z-C/s3_test 
+git clone https://github.com/Clone/Repo 
 ```
 
 
@@ -30,37 +30,40 @@ git config --list
 ```
 
 
-Config git to a user which is F-Z-C
+Config git to a user which is Your_Git_Username
 ```
-git config --global user.name F-Z-C
+git config --global user.name 
 ```
 
 
 
-Config git to a user-email which is faisal_Chaudhry235@hotmail.ca
+Config git to a user-email which is your_email@hotmail.ca
 ```
-git config --global user.email faisal_Chaudhry235@hotmail.ca
+git config --global user.email your_email@hotmail.ca
 ```
 
 
 Remove the configured email 
 ```
-git config --global  --unset user.email	  |  user.name
+git config --global  --unset user.email	 
 ```
-
+Remove the configured username
+```
+git config --global  --unset user.name
+```
 
 Configure your remote repository to your local repository
 ```
-git remote add origin https://github.com/F-Z-C/repo-name
+git remote add origin https://github.com/Your/Repository-Name
 ```
 
 Remove the configured git remote repository
 ```
-git remote remove origin https://github.com/F-Z-C/repo-name
+git remote remove origin https://github.com/Your/Repository-Name
 ```
 
 Configure remote repository to local repository, with github auth key
 ```
-git remote set-url origin https://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@github.com/FazeNCode/rhelproj
+git remote set-url origin https://ghp_WkPLvKSUCT1J0ee9Hm5k91SXDGA@github.com/FazeNCode/rhelproj
 ```
 

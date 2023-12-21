@@ -42,5 +42,7 @@ g++ main.cpp func.cpp comp.cpp item.cpp -o runfile
 ```
 
 
+<h3> What are Headers? </h3>
+Headers include standard C++ libraries, 
+
  #include <iostream>
- 
