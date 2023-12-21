@@ -40,3 +40,7 @@ we would need to compile each file in the command, to ouput towards the executab
 ```
 g++ main.cpp func.cpp comp.cpp item.cpp -o runfile 
 ```
+
+
+ #include <iostream>
+ 

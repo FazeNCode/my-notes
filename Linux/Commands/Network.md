@@ -59,20 +59,16 @@ nmap -iflist
 ```
 
 
-
-
 <br>
 <br>
-
-
 
 
 <h2> Network Manager Command Line Interface (NMCLI) </h3> 
-
 <h4> Used on enterprise linux distros such as Oracle/Redhat/Centos/Fedora  </h4>
 
 <br>
-The GUI version of nmcli 
+The Graphic User Interface (GUI) version of nmcli 
+
 ```
 nmtui
 ```

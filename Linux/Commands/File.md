@@ -1,21 +1,6 @@
   <h2> Create Files: </h2>
-
-
-  ### Create Files:
-
-Create a hidden file, put a . before the file name:
-
-```bash
-touch .filename.txt
-```
-Create multiple files, in this scenario, we create 10 files
-
-  ```bash
-touch filename{1..10}
-```
-
-
-```
+  
+ 
  Create a hidden file, put a . before the file name
 ```
 touch .filename.txt

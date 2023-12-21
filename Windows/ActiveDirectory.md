@@ -1,11 +1,16 @@
-Active Directory: (Windows)
-LDAP & Radius: (Linux / MacOs)
 
-What is Active Directory (AD) ?
-Directory service developed by Microsoft, which is a database and set of services which connects users with network resources.  
+
+<h3> What is Active Directory (AD)? </h3>
+
+Active Directory service is developed by Microsofti It is a database and set of services which connects users with network resources.  
 
 For example, When you use, or have used a computer in elementary or high school school, The credentials that have been given to you for logging in, are configured in Active Directory, such as username, password, email, permissions, etc..
 Every time you login using the given username and password, it goes through an authentication process to verify in Active Directory.
+
+
+Active Directory uses the LDAP Protocol 
+<br>
+LDAP & Radius: (Linux / MacOs)
 
 <br>
 

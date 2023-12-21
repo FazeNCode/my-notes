@@ -19,14 +19,14 @@ sudo apt install docker-ce
 
 
 
-<h2> Configuration of docker </h2> --
+<h2> Configuration of docker </h2>
 If you want to use docker without the need of running sudo everytime you run docker, put the user in the docker group by running the command below
 
 ```
 usermod -aG docker faze
 ```
 
-To confirm docker has been installed and configured 
+To confirm docker has been installed and configured run docker hello-world
 ```
 docker hello-world
 ```
