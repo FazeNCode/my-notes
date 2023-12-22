@@ -57,3 +57,59 @@ View all active and inactive containers,
 ```
 docker ps -a
 ```
+
+
+<h3> Container Usage: </h3>
+
+search for a Docker container specifically ubuntu
+```
+docker search ubuntu
+```
+
+In order to utilize a containerized operating system of your choice, you must pull the image first. The mpull command will fetch the os from docker's repostiroy hub. Repostiroies can be public and private.
+```
+docker pull ubuntu
+```
+
+Initiates the creation of a fresh container instance from the specified image. Runs the docker container in the foreground. 
+```
+docker run ubuntu
+```
+
+Initiates the creation of a fresh container instance from the specified image in interactive mode  
+```
+docker run -it ubuntu
+```
+
+You must start the container before entering and utilizing the container.
+when you "exit" from the container you must start the container.
+```
+docker start [container-id]
+```
+
+Starts an interactive shell within the container, allows you to run commands, inspect files or make configuration changes. Does not connect to the main process. 
+--rm flag automatically removes the container after we stop using it. 
+A more versatile command compared to docker attach.
+
+```
+docker exec -it container_id /bin/bash
+```
+
+To connect your terminal to the main process of a container. -i interactive | -t tty terminal
+Used to observe or interact with the logs or real-time output of the main process.
+```
+docker attach [container-id]
+```
+
+Docker image names can only be lowercase.
+```
+docker commit -p container_id new_container_name
+```
+
+You can create a Docker volume anywhere on your PC.
+```
+sudo mkdir -p Docker_Share
+```
+ 
+
+
