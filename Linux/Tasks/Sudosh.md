@@ -6,9 +6,13 @@ Once initated, Sudosh gives the ability to play back the inputed commands from a
 
 
 <h3> Installing Sudosh: </h3>
-<p> We need to install GNU Compiler collection, package which contains various libraries compilers for variety of programing langauges.
 
+<p> We need to install GNU Compiler collection, package which contains various libraries containing compilers for variety programing langauges.
+
+```
 yum install gcc automake git
+```
+
 Install the c compiler to run the script
 Install the automake package to run the make command
 git clone https://github.com/squash/sudosh2
@@ -16,32 +20,45 @@ git clone https://github.com/squash/sudosh2
 ./configure
 Run the script
 
+```
 make
-Run make to initiate the process of compiling the source code and generating executable, artifacts and libraries  
+```
+
+Run make to initiate the process of compiling the source code and generating executable, artifacts and libraries
+
+```
 make install
+```
 Run make install to implement and install the compiled artifacts, libraries etc…
 
+```
 sudosh -i
+```
+
 Run the command above to initiate an interactive session with Sudosh shell
 OUTPUT:
 [info]: created directory /var/log/sudosh
 [info]: chmod 0733 directory /var/log/sudosh
 
+```
 usermod -s /usr/local/bin/sudosh faze
+```
+
 Edit the user’s shell 
 
 On the root user edit  /etc/shells file and paste the below path
 /usr/local/bin/sudosh
 
+```
 ssh faze@192.168.244.163
+```
 Log into your server with the configured user.
 
+
 Run below command on the root user
+```
 /usr/local/bin/sudosh-replay
-
-
-
-
+```
 
 
 
@@ -62,12 +79,18 @@ Run command on the root user
 
 
 
-Alternative to changing the user's shell to utilize Sudosh:
-vi /etc/sudoers. Enter the line below
-username ALL=(root) NOPASSWD: /usr/local/bin/sudosh
+Alternative to changing the user's shell to utilize Sudosh, edit the sudoers file
+```
+vi /etc/sudoers. 
+```
+your_username_here ALL=(root) NOPASSWD: /usr/local/bin/sudosh
+
 
 Login to the user and run the command below to activate the user's capture.
+
+```
 /usr/local/bin/sudosh
+```
 
 Error below when running the make command:
 /root/capture/sudosh2/missing: line 81: aclocal-1.16: command not found
