@@ -1,41 +1,77 @@
-What is SSSD?
-System Security Services Daemon 
-Provides access on a client system to remote idenity and authentication providers.
 
-What is adcli?
-adcli is a tool whcih allows the admin to join the local machine to an ctive directory, it's role is to create the computer account on the domain and adjuct the Kerberos (keytab configruation).
 
-What is keytab?
-keytab is a file containing pairs of Kerberos prinicaps and encrypted keys (which are derived from the Kerberos password)
 
--------------------------------------------------------------------------------------------------------
+
+
+
+<h2> You must have already configured Active Directory, before perceeding. </h2>
+<h3> <h3>
 -- Setup Active Directory Domain Services Configration Wizrd On Windows-Server --
 Select the deployment operation:
 Check: Add a new forest
 Root domain name: Windows1.local
 password: 123456me!!
 The NetBIOS domain name: Winds  [The NetBIOS domain name is used on windows main screen]
---------------------------------------------------------------------------------------------------------
--- Joining Ubuntu To Active Directory using SSSD ---
 
-Step 1: Install services & put the windows I.P address as the dns in the ubuntu server, in network config
+
+<h2> Joining Ubuntu To Active Directory using SSSD </h2>
+
+Step 1: Install the required packages.
+
+```
 apt install sssd-ad sssd-tools realmd adcli 
+```
+
+<h3> What is SSSD? </h3>
+System Security Services Daemon 
+Provides access on a client system to remote idenity and authentication providers.
+
+<h3> What is realmd </h3>
+<p> Relamd allows us to use the realm commands to discover, and connect to the an existing Active Directory domain controller </p>
+
+<h3> What is adcli? </h3>
+adcli is a tool whcih allows the admin to join the local machine to an Active directory, it's role is to create the computer account on the domain and adjuct the Kerberos (keytab configruation).
+
+<h3> What is keytab? </h3>
+keytab is a file containing pairs of Kerberos prinicaps and encrypted keys (which are derived from the Kerberos password)
+
+
 
 Step 1.1: Check the group plolicies
+
+```
 apt policy sssd-ad sssd-tools realmd adcli
+```
 
 Step 1.2 Put the nameserver and ip address of windows machine in /etc/resolv.conf
-vi /etc/resolv.conf
 
-Step 2: Confirm that the Ubuntu machine is able to resolve Active-Driectory domain
+```
+vi /etc/resolv.conf
+```
+
+Step 2: Use the discover command to display that the Ubuntu machine is able to resolve Active-Driectory domain
+
+```
 realm discover WIN-Server1
+```
 
 Step 3: Join the Ubuntu server with windows server, using -User flag to join with Administrator user
+
+```
 realm join WIN-Server1 -U Administrator
+```
 
 Step 4: To Confirm the setup has been completed check the sssd.conf file
-cat /etc/sssd/sssd.conf   [Configuraion file for, System Security Service Daemon]
-cat /usr/share/pam-configs/mkhomedir   [In this file you can give the user a home directory on creation]
+
+[Configuraion file for, System Security Service Daemon]
+```
+cat /etc/sssd/sssd.conf   
+```
+
+ [In this file you can give the user a home directory on creation]
+```
+cat /usr/share/pam-configs/mkhomedir  
+```
 
 Step 5: To make a home directory for the user. PAM (Pluggable Authentication Module) a framework that provides system administrators with the ability to incorporate multiple authentication mechanisms into an existing system.
 pam-auth-update --enable mkhomedir
@@ -62,29 +98,53 @@ sssd.service Start request repeated too quickly
 
 
 -------------------------------------------------------------------------------------------------
--- CIFS Mount Ubuntu server with Windows Server --
 
-Step 1: Install the necessary packages.
-apt install cifs-utils samba samba-client libnss-winbind winbind
+
+
+
+<h3> CIFS Mount Ubuntu server with Windows Server  </h3>
+
+
+
+<h3> Step 1: Install the necessary packages </h3>
+
 Packages such samba, samba-client libnss-winbind winbind are used for more extensive intergration with Samba and Active Directory, such user authentication, user mapping.
+```
+apt install cifs-utils samba samba-client libnss-winbind winbind
+```
+
+
 
 Step 2: Create a folder to mount
+
+```
 mkdir /media/mount
+```
 
 Step 3: Create a folder on the windows machine 
+
 Right click folder >> Properties >> Advance Sharing
 Check mark: Share this folder
 Click on >> Permissions >> Check mark: Full Control
 Once Configured, the Network Path will be updated, which is used for mounting on the Linux machine.
 
+
 Step 4: Edit the /etc/nsswitch.conf file, to put "wins" before dns
+```
 nano /etc/nsswitch.conf
+```
+
 hosts: files mdns_minimal [NOTFOUND=return] wins dns
 
+
 Step 5: Make a credentials file on the specified user account, example listed below:
+
+```
 vi /home/david/.smbcred
-username=david@win.local
-password=123456me!!
+```
+
+username=Your_username@win.local
+password=Your_password
 domain=wins.local
 
 Step 6: Edit the fstab file
@@ -95,13 +155,21 @@ Fourth: Credential file path
 Fifth:  Group ID / User ID 
 Sixth:  Permissions on the on file and directory
 
-vi /etc/fstab
 //WINDOWSERVER/Mounted /media/mount cifs credentials=/home/ads@win.local/.smbcred,gid=966660001,uid=9666600001,file_mode=0777,dir_mode=0777 0 0
 
+```
 vi /etc/fstab
-//cubisdata/cds /mnt/test-mount cifs	 rw,vers3.0,credentials=/etc/smbount.ea_linux_admin2,uid=15099,gid=15099,file_mode=0775,dir_mode=0775 0 0
+```
 
-----------------------------------------------------------------------------------------------
+
+//cubisdata/cds /mnt/test-mount cifs	 rw,vers3.0,credentials=/etc/smbount.ea_linux_admin2,uid=15099,gid=15099,file_mode=0775,dir_mode=0775 0 0
+```
+vi /etc/fstab
+```
+
+
+
+
 --- Applying Group Policy On Ubuntu server using Adsys ---
 
 What is adsys?
@@ -120,7 +188,7 @@ Will download the files needed.
 Step 3: Connect ubuntu to windows server using smb shares. 
 On ubuntu open Files. Click on Other Location, and enter the below.
 smb://192.168.244.159
--------------------------------------------------------------------------------------------
+
 
 Connect ubuntu to windows server using smb shares. 
 On ubuntu open Files. Click on Other Location, and configure as shown below.
@@ -142,4 +210,3 @@ sudo passwd sambauser
 sudo smbpasswd -a sambauser
 sudo systemctl restart smbd
 
----------------------------------------------------------------------
