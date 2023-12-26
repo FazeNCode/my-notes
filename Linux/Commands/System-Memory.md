@@ -51,3 +51,12 @@ Will display the swappiness
 sysctl vm.swappiness
 ```
 
+
+
+grep -iE 'killed process|oom' /var/log/messages | grep -iE 'Dec 21'
+
+find out which process, UID was killed by OOM-Killer aswell as total-vm value which is the amount of memory the process requests before killing the process
+
+
+
+id -nu 18798
