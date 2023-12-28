@@ -1,14 +1,19 @@
-WHAT IN THE HECK IS ACL??
+<h3> WHAT IN THE HECK IS ACL?? </h3>
 
+<p> 
 Access control list (ACL) contains rules that grant or deny access to certain digital environments. There are two types of ACLs: Filesystem ACLs━filter access to files and/or directories.
-Filesystem ACLs tell operating systems which users can access the system, and what privileges the users are allowed.
+Filesystem ACLs tell operating systems which users can access the system, and what privileges the users are allowed. 
+</p>
 
--rw-rw-r--.  faze faze       168 Dec 21 19:53 cal_fazeo.txt
+```
+-rw-rw-r--.  faze faze       168 Dec 21 19:53 text-file.txt
 when we use ACL (access control list) the dot will be replaced by a +
--rw-r-----+   root faze         168 Dec 22 05:52 sec-cal.txt
-
+-rw-r-----+   root faze         168 Dec 22 05:52 text-file.txt
+```
+<p>
 In the /etc/fstab "defaults" means, ACL is turned on by default. 
 In the older systems, users would have to manually add it in the /etc/fstab file, just as you would add / mount  virtual-disk-device  or nfs-service 
+</p>
 
 getfacl ["file-name"]
 Output:
