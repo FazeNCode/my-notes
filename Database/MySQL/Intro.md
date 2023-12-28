@@ -1,4 +1,4 @@
-MySQL:
+
 
 What is an IBD file?
 An IBD file is a MySQL table created by the InnoDB database engine. 
