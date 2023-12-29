@@ -42,6 +42,14 @@ mkfs.ext4 /dev/[disknamehere]
 ```
 
 
+<h3> Types of file systems.</h3>
+Xfs XFS can be helpful where large files are involved: huge data storages, large-scale scientific or bloody enterprise projects, etc.
+Xt2
+Xt3 
+Xt4 Despite some capacity limitations, EXT4 makes it a very reliable and robust system to work with
+Ufs
+Exfat
+Ntfs
 
 
 Physical-Volume
