@@ -1,6 +1,6 @@
 <h3> NETWORK </h3>
 
-To list detail information about the network
+List detailed information about the network
 ```
 ipconfig /all
 ```
@@ -25,5 +25,15 @@ arp -a
 Print the routing table.
 ```
 route print
+```
+
+To list the users on the machine
+```
+net user
+```
+
+Type in  [show helper]
+```
+netsh
 ```
 

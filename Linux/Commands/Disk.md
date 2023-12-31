@@ -25,18 +25,19 @@ shows all the mounted system on the machine
 mount -l
 ```
 
-To create a new partition 
+To create a new partition, Note: fdisk can only manage up to 2tb
 ```
 fdisk /dev/[disknamehere]
 ```
 
-To create a new partition using gdisk which is newer
-Can handle more than 2Tb
+To create a new partition using gdisk which is newer method compared to fdisk, Can handle more than 2Tb
+
 ```
 gdisk /dev/[disknamehere]
 ```
 
 makes a ext4 format file system.
+NOTE: When configurining a lvm, you must choose a file system that is compitable.
 ```
 mkfs.ext4 /dev/[disknamehere]
 ```
@@ -52,42 +53,58 @@ Exfat
 Ntfs
 
 
-Physical-Volume
+<h3> Physical-Volume </h3>
 
+To display the current Physical volumes
 ```
 pvdisplay
 ```
-
-To display the current Physical volumes
-pvcreate /dev/partition-name
 To create a Physical Volume
+```
+pvcreate /dev/partition-name
+```
 
 
-Volume-Group
 
+<h3> Volume-Group </h3>
+
+To display the current Volume groups
 ```
 vgdisplay
 ```
-To display the current Volume groups
-vgcreate vgname /dev/partition-name
 To create a Volume group
 
+```
+vgcreate vgname /dev/partition-name
+```
 
-Logical-Volume
 
+<h3> Logical-Volume </h3>
+
+To display current Logical Volume
 ```
 lvdisplay
 ```
 
-
-To display current Logical Volume
-lvcreate -L 2G -n lvname/vgname  
 To create a Logical volume 
-lvresize --size 1G /dev/volume/logical
-To resize the logical volume
+```
+lvcreate -L 2G -n lvname/vgname  
+```
+
+If you want to resuze the logical volume after creation you can use the lvresize command, resize command allows you to decrease and increase the size 
+
+```
+lvresize --size +1G /dev/volume/logical
+```
+
+Extend is smillar to resize, but it only allows the increase of volume.
+```
 lvextend -r -L +2G /dev/volume/logical
-To extend the logical volume 
-lvremove /dev/volume/logical
+```
+
+lvremove
+
 To remove the logical volume
-
-
+```
+lvremove /dev/volume/logical
+```
