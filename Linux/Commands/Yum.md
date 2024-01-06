@@ -71,6 +71,7 @@ Mail Transfer Agent (MTA)  /etc/postfix/main.cf
 ```
 yum install postfix
 ```
+
 secure shell service
 ```
 yum install sshd 
@@ -104,14 +105,19 @@ Installs dnf package manager, which is an updated version of yum also known as Y
 ```
 yum install dnf-utils
 ```
+
 Installs utility to query DNS
 ```
 yum install bind bind-utils -y
 ```
+
+
 Installs various utilities tools for inspecting, and setting devices connected to the PCI bus
 ```
 yum install pci-utils
 ```
+
+
 Installs MySQL DataBase 
 ```
 yum install mysql-server

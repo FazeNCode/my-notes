@@ -43,10 +43,13 @@ Kernel is the core of the operating system.
 Grub is what specifies which Kernel to choose depending on utilization.
 
 The Compressed Kernel: 
-/boot/vmlinuz
+/boot/vmlinuz<h3> What is LILO? </h3>
+Linux Loader is a linux only boot-loader which was widly used untill it got replaced by GRUB
+NOTE: LILO was replaced by grub
 
 The Uncompressed kernel:
 /boot/vmlinux
+
 
 
 
