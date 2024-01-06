@@ -5,36 +5,40 @@ systemd-cgtop
 ```
 
 
-Check swap memory 
+- h human  | - m memory 
 ```
-smem -k -u -p -t
-```
-
-Displays: the total CPU usage 
-```
-top -O +%CPU
+free -hm
 ```
 
-Displays: the total usage 
+Displays: the total CPU usage, alternatively you can use the top command to specficly show cpu usage, replace the MEM, to CPU to view cpu usage
+```
+top -O +%MEM 
+```
+
+Displays: the total usage in graphical interface look,
 ```
 htop
 ```
 
-Similar to top but more enhanced, must be installed,
+Similar to top but more enhanced, must be installed.
 ```
 glances
 ```
+
+<p> Check swap memory </p>
+```
+smem -k -u -p -t
+```
+
+
+
+
 
 System Activity Report: Captures check swap memory 
 ```
 sar -r 
 ```
 
-
-- h human  | - m memory 
-```
-free -hm
-```
 
 Contains detailed information about the system's memory usage.
 ```

@@ -1,6 +1,5 @@
 <h2> SOFT-LINKS: </h2>	
 
-
 What is a Symbolic link
 A Symbolic Link, also known as Soft Link,  
 A symbolic link, often referred to as a symlink or soft link, is a special type of file in a file system that acts as a reference or pointer to another file or directory. Symbolic links are used to create shortcuts or aliases to existing files or directories, allowing you to access them from different locations in the file system.
