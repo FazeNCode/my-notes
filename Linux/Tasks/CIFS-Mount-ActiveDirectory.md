@@ -11,7 +11,7 @@ apt install cifs-utils samba samba-client libnss-winbind winbind
 
 
 
-Step 2: Create a folder to mount
+<h3> Step 2: Create a folder to mount </h3>
 
 ```
 mkdir /media/mount
