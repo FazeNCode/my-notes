@@ -35,3 +35,28 @@ ETHERNET 802.3
 802.11 (Wifi)
 PPP-LAN, DSL-WAN, Protocols
 SONET/SDH (Fibre optic backbone)
+
+
+
+[Layer 3]  -ROUTER, Multilayer Switch Wireless Router
+Separates Broadcast and Collision domain.
+forwards IP packets based on the IP address. 
+Routers connect networks.
+Switch is used to centrally connect multiple devices on the local network and transmit data to the correct location
+
+
+What does Layer 3 contain?
+IPv4
+IPv6
+ICMP- (Internet control message protocol/PING)
+ICMPv6
+IPSec (Provides security to packets on layer 1-3)
+
+Packets Delivery Scheme:
+-Unicast:
+-Broadcast:
+-Multicast:
+-Anycast:
+-Geocast:
+Encapsulation: Making packets. (Top to bottom)
+Decapsulation: (bottom to top)
