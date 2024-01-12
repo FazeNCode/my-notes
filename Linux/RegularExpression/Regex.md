@@ -23,7 +23,7 @@ Character classes
 grep -i "no[l]" /etc/passwd 
 Looks for key-word that contains "no", and also specificly l after "no" key-word
 This is referred to as a [Character Class] in Regex
-Note: one set of square brackts is for one character.
+Note: one set of square brackts is for one character.g
 
 
 grep -i [0-9] /etc/passwd

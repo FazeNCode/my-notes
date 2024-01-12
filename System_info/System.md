@@ -43,22 +43,10 @@ Kernel is the core of the operating system.
 Grub is what specifies which Kernel to choose depending on utilization.
 
 The Compressed Kernel: 
-/boot/vmlinuz<h3> What is LILO? </h3>
-Linux Loader is a linux only boot-loader which was widly used untill it got replaced by GRUB
-NOTE: LILO was replaced by grub
+/boot/vmlinuz
 
 The Uncompressed kernel:
 /boot/vmlinux
-
-
-
-
-
-Once the Kerenl is loaded, SystemD will be aviable to use
-
-
-
-
 
 
 The Kernel loads Systemd.
@@ -66,6 +54,13 @@ The Kernel loads Systemd.
 Systemd manages linux process and mounts file systems
 
 before Systemd, SysVinit was widely used 
+
+
+<h3> What is LILO? </h3>
+Linux Loader is a linux only boot-loader which was widly used untill it got replaced by GRUB
+NOTE: LILO was replaced by grub
+
+
 
 
 
