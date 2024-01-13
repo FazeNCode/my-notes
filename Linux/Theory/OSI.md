@@ -60,3 +60,28 @@ Packets Delivery Scheme:
 -Geocast:
 Encapsulation: Making packets. (Top to bottom)
 Decapsulation: (bottom to top)
+
+[LAYER 4]  TCP | UDP
+TRANSMISSION CONTROL PROTOCOL 
+Connection-oriented Protocol
+Commonly used for applications that require guaranteed delivery of data, such as web browsing (HTTP and HTTPS), file transfer (FTP), and secure shell (SSH)
+
+Works on a three way handshake.
+TCP is good for internet usage because it has a validation process.
+
+USER DATAGRAM PROTOCOL
+Connectionless Protocol  
+Provides faster, but less reliable, delivery of data.
+Used in applications where low latency is more critical than guaranteed delivery, such as real-time communication (VoIP, video streaming) and Domain Name System (DNS) queries.
+
+UDP is good for receiving calls, 
+because it mostly sends data rather than validating.
+
+
+[LAYER 5]- Session Layer 
+The Session Layer is responsible for establishing, maintaining, and terminating sessions or connections between applications.
+It manages dialogue control, allowing for full-duplex or half-duplex communication.
+NetBIOS (Network Basic Input/Output System)
+PPTP (Point-to-Point Tunneling Protocol)
+RPC (Remote Procedure Call)
+
