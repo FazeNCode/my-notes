@@ -85,3 +85,58 @@ NetBIOS (Network Basic Input/Output System)
 PPTP (Point-to-Point Tunneling Protocol)
 RPC (Remote Procedure Call)
 
+
+
+[LAYER 6]- Presentation Layer 
+Responsible for translating data between the Application Layer and the lower layers.
+Handles data compression, encryption, and character set conversion.
+SSL/TLS (Secure Sockets Layer/Transport Layer Security)
+JPEG, GIF (Image compression formats)
+ASCII to EBCDIC conversion
+
+
+
+[LAYERS  7] 
+HTTP (Hypertext Transfer Protocol)
+DNS (Domain Name System)
+DHCP (Dynamic Host Configuration Protocol)
+POP (Post Office Protocol):
+IMAP (Internet Message Access Protocol)
+Resolves domain names to IP addresses.
+Used for web communication.
+
+
+
+
+
+Public Address:
+Route-able.
+Have to pay to use it.
+Has to be unique to the user.
+
+Private Address:
+1. Not routable to the internet.
+2. free to use.
+3. 3 segments.
+4. anybody can have the same private I.P
+-APIPA: (Automatic private IP Address)
+
+Routing: 
+The process of Selecting the best path in a network.
+
+Uses a routing table or forwarding table to make decisions. 
+ Routing table maintains a cord of routes to various network destinations.
+
+Destination Address ----> next-hop I.P Address ----> forwarding table  ----> interface number(physical)
+
+Packet forwarding:
+In Summary function of routers:
+-best path selections
+.ruling routing algorithm.
+-forwarding packets to destination
+.Switch
+
+Routing protocols:
+RIP (Routing information protocol)
+OSPF (open shortest path first)
+BGP (Border gateway protocol)
