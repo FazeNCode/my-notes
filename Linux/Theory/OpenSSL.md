@@ -3,17 +3,18 @@ OpenSSL
 - Open source
 - Has implementation for Secure Socket Layer (SSL) Transport Layer Security (TLS). 
 
-Versioning Scheme:
--- MAJOR: --  
+<h3> Versioning Scheme </h3>
+
+- MAJOR: 
 Shows a major release. Not backwards compatible
  
--- MINOR -- 
+- MINOR: 
 Shows a minor release, contains new features. It is backwards compatible.
 
--- PATCH -- 
+- PATCH:
 Shows bugs and security fixes. No new features are added. It is backwards compatible 
 
-Libraries: 
+<h3> Libraries </h3>
 -- LIBSSL --
 Is used by OpenSSL to perform TLS related operations, LibSSL is dependent on LibCRYPTO 
 
@@ -21,8 +22,11 @@ Is used by OpenSSL to perform TLS related operations, LibSSL is dependent on Lib
 Is used by OpenSSL to perform cryptographic operations, such as encryption, signing, hashing and key agreement 
 
 
-openssl version
 This will display the current version.
+```
+openssl version
+```
+
 
 
 https://www.ssl.com/how-to/create-a-pfx-p12-certificate-file-using-openssl/
