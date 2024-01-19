@@ -432,7 +432,7 @@ https://www.baeldung.com/java-printstream-printf
 
 
 
-Question 16.)
+Question 16.
 // We must import the scanner to utilize it, must be Capital S
 import java.util.Scanner;
 
