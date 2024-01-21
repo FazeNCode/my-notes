@@ -1,5 +1,3 @@
-
-
 <h3> What is a BIOS? </h3>
 
 <p> Basic Input Output System (BIOS) is a firmware that is pre-installed onto the motherboard. </p>
@@ -31,6 +29,11 @@ Grand Unified Boot-loader's main purpose is to load/execute the kernel into syst
 Grub decides what operating to use, per user request. 
 Grub is used on various operating systems
 When utilizing Grub, you will be presented with a splash screen
+
+
+<p> grub.cfg file is associated primarily with Linux and Unix-based operating systems that use the GRUB (Grand Unified Bootloader) bootloader. It is the main configuration file used by GRUB to determine how the boot menu is presented and which options are available during the boot process. </p>
+
+<p> The configuration for grub is usually located in ```/boot/grub/grub.cfg``` </p>
 
 NOTE: LILO was replaced by grub
 
