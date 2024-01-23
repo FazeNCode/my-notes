@@ -194,3 +194,31 @@ In order to map these two identifiers together (IP address and MAC address), the
 ARP Request
 ARP Reply
 When an ARP request is sent, a message is broadcasted to every other device found on a network by the device, asking whether or not the device's MAC address matches the requested IP address. If the device does have the requested IP address, an ARP reply is returned to the initial device to acknowledge this. The initial device will now remember this and store it within its cache (an ARP entry). 
+
+
+TOPOLOGIES
+
+-BUS Topology:
+1. No central device 
+2. Every network node is attached to one shared bus cable.
+3. When sending nodes, every device connected to the bus topology will receive the nodes. 
+4. Terminators are required at both ends to prevent data reflection. Without terminators, data signals would bounce back and forth endlessly until the network collapses.  
+6. Tap = Connectors
+7. Dropline = Cables
+cost-efficient to set up
+
+-RING Topology:
+1. All nodes are connected to a cable, forming a closed loop.
+2. Data in the Token(packet) flows from one node to the next, in a circle.
+3. Each node reads the data and forwards it to the next one until it reaches the destination.
+
+-BUS && RING: are simple and inexpensive. 
+1. If one single point breaks the whole system will be down.
+2. Troubleshooting and maintenance are difficult.
+3. Security is a major problem because every node can access all other traffic.
+
+-STAR Topology: 
+1. All nodes are individually connected to a central device, HUB or SWITCH.
+2. Central point failure will crash the whole system. 
+3. Easy to configure.
+ expensive to set up and maintain
