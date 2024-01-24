@@ -222,3 +222,32 @@ cost-efficient to set up
 2. Central point failure will crash the whole system. 
 3. Easy to configure.
  expensive to set up and maintain
+
+
+
+ HYBRID TOPOLOGY
+-STAR-RING:
+1. Combination of physical star and logical ring.
+
+-STAR-BUS:
+1. Combination of physical star and logical bus.
+2. Most common Ethernet LAN topology.
+
+
+-PARTIALLY MESHED TOPOLOGY:
+1. Similar to fully meshed with fewer connections.
+2. Practical for physical connections. 
+
+
+-FULL MESHED TOPOLOGY:
+1. Every node connects to every other node.
+2. Practical in wireless networks.
+3. Formula is C=n(n-1)/2    E.g. C=6(6-1)/2 = 15.
+4. Good Fault tolerance.
+5. Privacy and security.
+6. Difficult installation.
+
+
+Simplex Links = n(n-1)
+Duplex Links = n(n-1)/2
+
