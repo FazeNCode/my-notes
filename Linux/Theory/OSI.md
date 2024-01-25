@@ -251,3 +251,50 @@ cost-efficient to set up
 Simplex Links = n(n-1)
 Duplex Links = n(n-1)/2
 
+
+
+
+CABLE-TYPES
+
+              -UTP:(UNSHIELDED TWISTED PAIR)
+1. Consists of 4 pairs of Color-coded wires, twisted around each other.
+2. Wires are twisted to prevent electromagnetic interference.
+3. Used mainly in homes.
+         
+             -STP:(SHIELDED TWISTED PAIR)
+1. Has a foil shield that covers the wires.
+2. The foil shield adds a layer of protection against electromagnetic interference leaking into and out of the cable.
+3. Used mainly in industry.
+
+STRAIGHT CABLE: is when both ends of a cable are wired using the same standard.
+It is used to connect computers to hubs, switches, routers, modems.
+
+CROSSOVER CABLE: is when both ends of a cable are wired using the 2 different standards.
+It is used to connect two of the same devices  together, HUB TO HUB, SWITCH TO SWITCH.
+
+CAT 3:                         10 Mbps.
+CAT 5:                         100 Mbps.
+CAT 5e:(Enhanced)    1Gbps.
+CAT 6:                        10Gbps.  (under 100 meters)
+CAT 6a:(Augmented)  10Gbps.
+CAT 7:                         10Gbps.  (Shielded to wires)
+
+
+
+
+
+
+
+RJ11:  Used for phones and modems.
+RJ45: Used for network wiring, routers.
+
+-568A:                                    -568B:
+White-Green                       White-Orange
+Green                                   Orange
+White- Orange                    White-green
+Blue                                      Blue
+White-Blue                         White-Blue
+Orange                                 Green
+White-Brown                      White-Brown
+Brown                                  Brown
+
