@@ -14,3 +14,9 @@ Supports LDAP services, record locking
 - Relies on TCP & UDP
 
 - OSI-Layer-4 
+
+
+Installs Common Internet file system.
+```
+yum install cifs-utils
+```
