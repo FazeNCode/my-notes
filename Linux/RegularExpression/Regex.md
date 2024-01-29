@@ -3,18 +3,26 @@ Regular Expression (REGEX)
 
 
 
-grep -i "no" /etc/passwd
 Will look for any key-word that contains "no" 
 -i flag ignores case sensetivity, Linux by default is case sensitive
+```
+grep -i "no" /etc/passwd
+```
 
 
-grep -i "no."/etc/passwd
 Will look for any key word that contains "no" and one character after "no"
+```
+grep -i "no."/etc/passwd
+```
 
 
-grep -i "no.." /etc/passwd
 Looks for key-word that contains "no" and two characters after "no" Every dot represents another character after the key-word
 Note: you can also place the dot or dots infront of the key-word, which does the oppoisite 
+```
+grep -i "no.." /etc/passwd
+```
+
+
 
 
 Character classes
@@ -45,32 +53,47 @@ Anchoring
 $ is for anchor to end of line.
 ^ is for anchor to start of line. The ^ is called a "carrot symbol"
 
-grep -i "nologin$" /etc/passwd
 Referred to as "anchoring", grab only "nologin" if it's last word of the line 
+```
+grep -i "nologin$" /etc/passwd
+```
 
-grep -i "^faze" /etc/passwd
+
 Referred to as "anchoring", grab only "faze" if it's the first word of the line 
+```
+grep -i "^faze" /etc/passwd
+```
 
-grep "^faze$" /etc/passwd
+
+
 grabs the only specific word, in this case I'm telling it to grab only faze
+```
+grep "^faze$" /etc/passwd
+```
 
-grep -n "^$" /etc/passwd
+
 grabs any empty lines, you can used the -n flag to get the numbered line that is empty 
 
+```
+grep -n "^$" /etc/passwd
+```
 
-grep -n "^...$" /etc/passwd | wc -l
+
 grabs words that only have a specified ammount of characters, In this scenario I'm telling it to look for words that have only three letter in /etc/passwd. I'm then using word count, to show me the total ammount of words that only contain three letters. 
+
+```
+grep -n "^...$" /etc/passwd | wc -l
+```
 
 
 ? mean 0 or 1 occurance of previous character or character-class = same as {0,1}
 
 Grouping
----------------
+---------
 ()
 
-
 Alternation/Choice
----------------------
+------------------
 
 
 
