@@ -114,12 +114,13 @@ sudo mkdir -p Docker_Share
 
 
 
-
+Juice shop is used for web application pen-testing, paired with burp suite.
 ```
 docker pull bkimminich/juice-shop
 ```
 
-Damn Vulnerable Web application is used for web application pen-testing, such as mySQL injection,
+Damn Vulnerable Web application is used for web application pen-testing, such as mySQL injection.
+
 ```
 docker pull vulnerables/web-dvwa
 ```
