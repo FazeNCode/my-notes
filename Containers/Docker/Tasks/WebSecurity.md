@@ -1,5 +1,5 @@
 First step: This will download the images to your linux machine by pulling it from docker hub. 
-use the [docker images] command to view the downlaoded images 
+
 
 ```
 docker pull bkimminich/juice-shop
@@ -9,6 +9,16 @@ docker pull bkimminich/juice-shop
 docker pull vulnerables/web-dvwa
 ```
 
+use the [docker images] command to view the downlaoded images.
+
+```
+docker images 
+```
+
+Use the docker ps to view all the running containers. -a flag to display all.
+```
+docker ps -a
+```
 
 Second step: run the image (-d for deattached) (-p for port) followed by the image name
 ```
