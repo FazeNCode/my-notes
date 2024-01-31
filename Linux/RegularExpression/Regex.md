@@ -28,23 +28,37 @@ grep -i "no.." /etc/passwd
 Character classes
 -----------------
 
-grep -i "no[l]" /etc/passwd 
 Looks for key-word that contains "no", and also specificly l after "no" key-word
 This is referred to as a [Character Class] in Regex
-Note: one set of square brackts is for one character.g
+Note: one set of square brackts is for one character
 
 
-grep -i [0-9] /etc/passwd
+```
+grep -i "no[l]" /etc/passwd 
+```
+
+
+
 Looks for anything that has a number 0-9 in /etc/passwd 
+```
+grep -i [0-9] /etc/passwd
+```
 
 
-grep -i [^0-9] /etc/passwd
+
 You can put the carrot sign, (arrow-up) to negate the numbers, meaning it will look for anything, BUT the numbers 0-9 in /etc/passwd
 Note: one set of square brackets is for ONE character
+```
+grep -i [^0-9] /etc/passwd
+```
 
 
-grep -i [:] /etc/passwd 
 Wil look for anything that contains a semi-colon in /etc/passwd 
+```
+grep -i [:] /etc/passwd 
+```
+
+
 
 
 
@@ -97,8 +111,8 @@ Alternation/Choice
 
 
 
-
-
 yes command is used to output multiple pieces of text into a file, usually used in scripts.
 
+```
 yes "some-text" | head -n 200 >> file.txt
+```
