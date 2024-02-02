@@ -18,9 +18,10 @@ More To learn
 Required Compilation 	
 Not True Static Typing
 
-What Does it Offer?
+
 
 Commands:
+--------
 
 Compile the typescript to plain javascript
 ```
