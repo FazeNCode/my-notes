@@ -37,3 +37,30 @@ Create the tsconfig file
 ```
 tsc --init 	
 ```
+
+      REACT  (JSX) JavaScript-Syntax-Extension 
+		is considered to be a framework like Angular or Vue, 
+		but it lacks built in functionality. To add functions in react
+	You download packages for example, Npm to create.  Npx to execute
+
+	
+		
+-VARIABLES-, var,  let,  const 
+
+
+
+-DATA TYPES- Strings, Characters, Boleen, Null, Undefined, Symbols
+
+
+
+
+-Concatenation-
+---------------------
+console.log("My name is " + name +" and my age is" + age);
+
+
+-Template Strings-
+-----------------------
+// console.log(`My name is ${name} and I am ${age} years old`);
+//const info = `My name is ${name} and I am ${age} years old`
+// console.log(info);
