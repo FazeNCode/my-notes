@@ -64,3 +64,24 @@ console.log("My name is " + name +" and my age is" + age);
 // console.log(`My name is ${name} and I am ${age} years old`);
 //const info = `My name is ${name} and I am ${age} years old`
 // console.log(info);
+
+
+
+
+
+-Methods-
+------------------------------------------------------------------------
+A method is a function that is associated with a object
+
+console.log(f.length); 
+A property doesn't use double parentheses 
+
+console.log(f.toUpperCase());
+A method must use double parentheses for it to work () A method is a function that is associated with a object
+
+//console.log(f.substring(0,3));
+Substring method is to count the number of strings in the character: Remember a method must be wrapped with double parenthesis.
+
+//console.log(tech.split(' ,')) 
+Split method is a type of an array, which you can add lists to
+
