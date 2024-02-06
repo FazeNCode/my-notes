@@ -85,3 +85,23 @@ Substring method is to count the number of strings in the character: Remember a 
 //console.log(tech.split(' ,')) 
 Split method is a type of an array, which you can add lists to
 
+
+
+
+<h3> Data types </h3> 
+numbers ---> 1, 2 ,3 ,4 ,5
+strings ---> "hello" , 'hey' , 'a' "B"
+arrays --->  []
+objects ---> {}
+boolean ---> true /false
+
+
+<h3> Math Operators </h3>
+Multiply --->  *
+Divide --->  /
+Exponents --->  **
+Modulus/Remainder -->  %  5%2=1
+Addition --->  +
+Subtraction --->  -
+
+
