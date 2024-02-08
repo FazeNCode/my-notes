@@ -105,3 +105,9 @@ Addition --->  +
 Subtraction --->  -
 
 
+
+<h3> Math Methods </h3>
+Math.floor ---> Rounds down
+Math.ciel --->  Rounds up
+Math.random ---> gives a random
+*/
