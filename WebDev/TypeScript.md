@@ -111,3 +111,10 @@ Math.floor ---> Rounds down
 Math.ciel --->  Rounds up
 Math.random ---> gives a random
 */
+
+
+<h3> Variables </h3>
+Var ---> OutDated no longer used as much
+Let ---> Global variable, can be changed
+Const ---> Constant variable, cannot be changed
+*/
