@@ -127,3 +127,37 @@ Const ---> Constant variable, cannot be changed
 < ---> Less than
 >= ---> Greater than or equals to
 <= ---> Less than or equals to
+
+// Weather app   (Conditionals)
+// let weather = prompt("How is the weather")
+// // If there is rain, grab yourself an umbrella
+// if (weather == 'rain') {
+//     console.log ("Grab yo umbrella it's poruin out there famdem")
+// }
+// // if it's not raining, grab yo shorts an t-shirt
+// else{
+//     console.log("Appears to be no rain in sight, you can wear your shorts and t-shirt")
+// }
+
+
+Functions can store block of codes
+This is an example of function with no argument
+
+```
+function callingFunction(){
+ console.log('I'm calling a function')
+}
+callingFunction()
+
+```
+
+
+This is an example of a function with an argument
+```
+function myName(name){
+     console.log(name)
+}
+ myName('faze')
+
+```
+
