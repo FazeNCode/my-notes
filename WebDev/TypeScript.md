@@ -117,4 +117,13 @@ Math.random ---> gives a random
 Var ---> OutDated no longer used as much
 Let ---> Global variable, can be changed
 Const ---> Constant variable, cannot be changed
-*/
+
+
+
+<h3>  Conditionals </h3>
+== ---> Checks for equality
+=== ---> Checks for equality and data type
+> ---> Greater than
+< ---> Less than
+>= ---> Greater than or equals to
+<= ---> Less than or equals to
