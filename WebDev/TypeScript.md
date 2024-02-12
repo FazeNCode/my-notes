@@ -161,3 +161,54 @@ function myName(name){
 
 ```
 
+
+```
+
+// // Created a function name greeting
+// // passing an argument "name" in the greeting function
+// function greeting(name){
+
+
+//             // String concatenation
+//     console.log("hey" + " " + name  + " nice to meet you!")
+//             // Template Literals
+//     greet = `hey ${name} nice to meet you!`
+     
+//         console.log(greet)
+// }
+// //This is how you call a function
+// greeting('faisal')
+
+```
+
+```
+// function sum(a, b){
+//     // the return statement makes the function reusable, you can use the same function in multiple places
+//     return a + b
+// }
+// num1 = sum(1, 2)
+// console.log(num1)
+
+
+```
+
+
+
+// Template literals provide an easy way to interpolate variables and expressions into string.
+// Interpolation is an efficient way of concatenation
+// String Interpolation, references a variable within a string.
+
+```
+// ES6 Version of writng the function
+function foodTotalCost(food , tip){
+    const tipPercentage = tip / 100
+    const tipAmount = food * tipPercentage
+
+    // total = food + tipAmount
+    const total = sum(food, tip)
+    return total
+}
+console.log(foodTotalCost (100 , 20))
+
+```
+
