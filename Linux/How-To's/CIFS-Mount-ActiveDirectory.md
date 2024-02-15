@@ -17,7 +17,7 @@ apt install cifs-utils samba samba-client libnss-winbind winbind
 mkdir /media/mount
 ```
 
-Step 3: Create a folder on the windows machine 
+<h3> Step 3: Create a folder on the windows machine </h3>
 
 Right click folder >> Properties >> Advance Sharing
 Check mark: Share this folder
@@ -25,7 +25,7 @@ Click on >> Permissions >> Check mark: Full Control
 Once Configured, the Network Path will be updated, which is used for mounting on the Linux machine.
 
 
-Step 4: Edit the /etc/nsswitch.conf file, to put "wins" before dns
+<h3> Step 4: Edit the /etc/nsswitch.conf file, to put "wins" before dns </h3>
 ```
 nano /etc/nsswitch.conf
 ```
@@ -33,7 +33,8 @@ nano /etc/nsswitch.conf
 hosts: files mdns_minimal [NOTFOUND=return] wins dns
 
 
-Step 5: Make a credentials file on the specified user account, example listed below:
+<h3> Step 5: Make a credentials file on the specified user account, example listed below:
+</h3>
 
 ```
 vi /home/david/.smbcred
@@ -43,7 +44,7 @@ username=Your_username@win.local
 password=Your_password
 domain=wins.local
 
-Step 6: Edit the fstab file
+<h3> Step 6: Edit the fstab file </h3>
 First:  Windows machine name and the directory which we are going to mount to.
 Second: Mount path on the linux machine
 Third:  File sharing method
