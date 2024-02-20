@@ -28,47 +28,90 @@ To move the cursor to the right or left terminal
 
 
 
-Creating New Window / navigate
+<h2> Creating New Window / navigate </h2>
 Window is when you are inside tmux 
+To create a new window type CTRL + B then let go of CTRL + B and type c on keyboard
+```
+[CTRL + B] + [c]
+```
 
-[CTRL + B]  [c]
-To create a new window
-CTRL + B]  [SHIFT+7]
 To kill the window
-[CTRL + B]  [,]
+```
+[CTRL + B] + [SHIFT+7]
+```
 To rename the window
-[CTRL + B]  [w]
+```
+[CTRL + B] + [,]
+```
+
 To choose a window, with list format
+```
+[CTRL + B] + [w]
+```
 
 
-[CTRL + B]  [ALT+ARROW-UP]
 To resize the window 
-[CTRL + B]  [ALT+1]
+```
+[CTRL + B]  [ALT+ARROW-UP]
+```
+
 To switch to even-horizontal layout 
-[CTRL + B]  [ALT+2]
+```
+[CTRL + B]  [ALT+1]
+```
+
 To switch to even-vertical layout 
-[CTRL + B]  [ SHIFT+{  ]
+```
+[CTRL + B]  [ALT+2]
+```
+
 To move the pane left 
+```
+[CTRL + B]  [ SHIFT+{  ]
+```
 
-[CTRL + B]  [q]
+
 To view the pane numbers
+```
+[CTRL + B]  [q]
+```
 
-[CTRL + B]  [0]
+
 To navigate through different windows, 
 NOTE:the first window starts from 0
 Next to the window-name an astrish * is present indicating the current window.
+```
+[CTRL + B]  [0]
+```
 
-COMMANDS:
-tmux ls
+
+
+<h4> COMMANDS </h4>
 Display tmux process running in the background
-tmux new -s [session-name]
+```
+tmux ls
+```
+
 Create a new tmux session process
-tmux kill-session -t [session-name]
+```
+tmux new -s name-the-session
+```
+
 Kill the session that is provided.
-tmux attach -t [session-number]
+```
+tmux kill-session -t name-the-session
+```
+
 Re-Open closed session 
-tmux rename-session -t  [currentname] newname 
-Rename session name, 
+```
+tmux attach -t name-of-session
+```
+
+Rename session name
+```
+tmux rename-session -t name-of-session new-session-name
+```
+
 
 
 
