@@ -2,15 +2,13 @@
 
 
 
-
-
 <h2> You must have already configured Active Directory, before perceeding. </h2>
 <h3> <h3>
--- Setup Active Directory Domain Services Configration Wizrd On Windows-Server --
+-- Setup Active Directory Domain Services Configration Wizard On Windows-Server --
 Select the deployment operation:
 Check: Add a new forest
 Root domain name: Windows1.local
-password: 123456me!!
+password: password
 The NetBIOS domain name: Winds  [The NetBIOS domain name is used on windows main screen]
 
 

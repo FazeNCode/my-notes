@@ -1,4 +1,4 @@
-<h3> CIFS Mount Ubuntu server with Windows Server  </h3>
+<h3> How to create CIFS Mount on Ubuntu server connected to Active Directory. </h3>
 
 
 
