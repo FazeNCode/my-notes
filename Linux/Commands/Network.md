@@ -14,13 +14,13 @@ Dislays the routing of the network
 ip r 
 ```
 
-Displays the specific interface(NIC) a MAC address is connected to, and how long to keep the ARP entry within the table.
+Displays the specific interface's(NIC) MAC address is connected to, and how long to keep the ARP entry within the table. Also the mac address of default gateway.
 ```
 arp -a 
 ```
 
 
-Print the routing table, this tells users where traffic exits.
+Print the routing table, The route command helps to establish traffic being distrubted through network connections.
 ```
 route 
 ```
