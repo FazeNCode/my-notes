@@ -1,4 +1,4 @@
-<h3> WHAT IN THE HECK IS ACL?? </h3>
+<h3> WHAT IS ACL?? </h3>
 
 <p> 
 Access control list (ACL) contains rules that grant or deny access to certain digital environments. There are two types of ACLs: Filesystem ACLs━filter access to files and/or directories.

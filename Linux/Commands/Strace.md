@@ -1,5 +1,5 @@
-What is strace used for?
-Strace is used for system calls. 
+WHAT IS STRACE?
+Strace is command line utility command which is used to display the systems, system calls. 
 
 What is a system call? 
 A system call is a fundamental interface between an application program and the underlying kernel of an operating system.
