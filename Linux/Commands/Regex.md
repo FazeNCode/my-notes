@@ -112,13 +112,13 @@ In this example it will grab and display only two semi-colona nothing more.
 
 
 
-
 Repetitions {} 
 Indicate specific, minimum or maximum occurrences of previous character or character class
 ------------------
 egrep "[0-9]{3}" /etc/passwd
 In this example it will grab numbers 0-9, but with the repetition of 3, meaning, show me all the 
 numbers 0-9 that have 3 repetitions in those numbers.
+
 
 
 
