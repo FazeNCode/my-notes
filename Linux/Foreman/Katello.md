@@ -39,3 +39,25 @@ Red Hat Satelite 6 includes a RESTful API service that allows system administrat
 Red Hat capsule Server acts as a proxy for some of the main Satelite including repository storage, DNS, DHCP and puppet master configuration. Each Server also contains intergrated Capsule Server services.
 
 
+
+
+------------- Foreman & Katelo Setup ---------------
+
+Step 1: 
+- localectl status
+ - localectl set-locale LC_CTYPE=en_US.utf8
+
+Step 1.1:
+- hostnamectl set-hostname foreman.faze.local
+ - echo 192.168.244.143 foreman.faze.local foreman localhost >> /etc/hosts
+   - dnsdomainame -f
+
+Step 2: Install Chronyc service & check chronyc sources, enable ntp.
+- yum install chronyc -y
+  - chronyc sources
+  - timedatectl set-ntp true
+
+Step 2.1: Add ports to firewall
+  - firewall-cmd --add-port={53,80,443,5647,9090}/tcp --permanent
+  - firewall-cmd --add-port={67-69,53}/udp --permanent
+  - firewall-cmd --reload
