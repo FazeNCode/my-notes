@@ -148,8 +148,8 @@ grep -iE "reboot|shutdown|boot|error|fail|failed|warn|warning|disabled" /var/log
 ```
 
 
-
-
+<p>How to grep for a keyword such as killed proccess and oom in /var/log/messages, and also specifiy the date of when the action took place</p>
+grep -iE 'killed process|oom' /var/log/messages | grep -iE 'May'
 
 
 
