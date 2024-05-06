@@ -11,11 +11,13 @@ Shared directories are typically created on a file server, running the NFS serve
 - OSI-Layer-4 
 
 
-<h2> How to install NFS?:</h2>
+<h2> Install & Conifuration:</h2>
 
 install nfs using the command below, either with yum or dnf, the package includes the necessary utilities and daemons for NFS (Network File System) server and client support.
 <br>
-The Autofs service is optional but highly recommended. Autofs provides functionality to automatically mount filesystems when they are accessed and unmount them when not in use."
+
+The Autofs service is optional but highly recommended. Autofs provides functionality to automatically mount filesystems when they are accessed and unmount them when not in use.
+
 
 <br>
 ```

@@ -13,6 +13,8 @@ The most important core components are
 Katello Patch Management or Foreman with Katello, is one of the components of the upstream version of Red Hat Satellite, Katelo is a life cycle management plugin for Foreman. Katello allows managing thousands of machines in a single click. It pulls content from remote repositories into an isolated environment and makes the subscription's management easy for us.
 
 
+
+
 Foreman:
 is an open source software/program used for provisioning and life cycle management of physical and virtual systems.
 Foreman automatically configures these systems using various methods including.

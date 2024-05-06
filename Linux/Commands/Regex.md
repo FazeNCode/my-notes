@@ -127,14 +127,21 @@ numbers 0-9 that have 3 repetitions in those numbers.
 <p> The grep is a useful command that allows the ability to search for a specific  keyword on a linux server, whether that being a file, pdf file, zipped file, proccess id.</p>
 
 
-pgrep nginx
 pgrep is used for procces id 
+```
+pgrep nginx
+```
 
 
-fgrep
 fgrep is used 
+```
+fgrep
+```
+fgrep
 
-  
+
+
+
 zgrep 
 zgrep is used to grep from zip files, 
 
