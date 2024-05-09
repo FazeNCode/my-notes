@@ -162,14 +162,22 @@ grep -iE "reboot|shutdown|boot|error|fail|failed|warn|warning|disabled" /var/log
 
 
 <p>How to grep for a keyword such as killed proccess and oom in /var/log/messages, and also specifiy the date of when the action took place</p>
+
+```
 grep -iE 'killed process|oom' /var/log/messages | grep -iE 'May'
+```
+
+
 
 
 
 
 yes command is used to output multiple pieces of text into a file, usually used in scripts.
 
+```
 yes "some-text" | head -n 200 >> file.txt
+```
+
 
 
 
