@@ -141,12 +141,18 @@ fgrep
 
 
 
+zgrep is used to grep from zip files.
 
-zgrep 
-zgrep is used to grep from zip files, 
+```
+zgrep file.zip
+```
 
 
 pdfgrep is used to grep from pdf files.
+```
+pdfgrep file.pdf
+````
+
 
 
 In the command below, I'm grepping for the keywords in /var/log/messages for any crash messages, also I am adding another grep to specifically narrow it down the date
