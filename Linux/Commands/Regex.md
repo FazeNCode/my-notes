@@ -5,25 +5,28 @@
 | OR
 \ Escape character
 
-Literal Characters:
+<h3> Literal Characters: </h3>
 Literal characters in regex are the most commonly used, for example say I want to find my user from /etc/passwd I would grep it by describing the name in quotes.
 grep "my-user" /etc/passwd
 
+<h3> Meta Characters:</h3>
 
-Meta Characters:
 Meta characters are characters that have special meaning.
 
 
+
+
 ```
 grep -i "no" /etc/passwd
 ```
-grep -i "no" /etc/passwd
-Will look for any key-word that contains "no" 
+Look for any key-word that contains "no" 
 -i flag ignores case sensitivity, Linux by default is case sensitive
 
 
+```
 grep -i "no."/etc/passwd
-Will look for any key word that contains "no" and one character after "no"
+```
+Look for any key word that contains "no" and one character after "no"
 
 
 grep -i "no.." /etc/passwd
@@ -33,23 +36,29 @@ Note: you can also place the dot or dots in front of the key-word, which does th
 
 Character classes
 -----------------
-
+```
 grep -i "no[l]" /etc/passwd 
+```
 Looks for key-word that contains "no", and also specifically l after "no" key-word
 This is referred to as a [Character Class] in Regex
 Note: one set of square brackets is for one character.
 
-
+````
 grep -i [0-9] /etc/passwd
+````
 Looks for anything that has a number 0-9 in /etc/passwd 
 
 
+````
 grep -i [^0-9] /etc/passwd
+````
 You can put the carrot sign, (arrow-up) to negate the numbers, meaning it will look for anything, BUT the numbers 0-9 in /etc/passwd
 Note: one set of square brackets is for ONE character
 
 
+````
 grep -i [:] /etc/passwd 
+````
 Wil look for anything that contains a semi-colon in /etc/passwd 
 
 
