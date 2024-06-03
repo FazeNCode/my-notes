@@ -88,3 +88,11 @@ Meterial surface: PrincipalBSD is the correct method when it comes to applying t
 
 
 NLA-Editor = (Nonlinear Animation) in blender 3.6
+
+
+
+
+-- Blender Animation Issues -- 
+To add the idle animation to the 3d maplestory models, configure export settings.
+
+When exporting >> settings change the >> Animation mode, Scene and NLA Tracks, seem to work, but there is a slight issue. The issue is that all the animations are getting packed together and being played all at once. So, under the "Animation mode" in blender, I turned off "Bake All Objects Animation"
