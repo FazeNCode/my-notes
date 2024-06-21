@@ -5,7 +5,7 @@ Grant any specific user's with certain permissions to access ESXi configuration 
 For example if a user named "Christy" job involves her to manage Virtual machines and Data Store, we can specifically grant access to those specified categories based on her work load. This tightens the security measures.
 
 
--------------- PART-1 Adding "Roles and Features" (AD | DNS) ------------------------
+----------- PART-1 Adding "Roles and Features" (AD | DNS) -----------
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
@@ -53,7 +53,7 @@ Click on Promote this server to a domain controller
 
 
 
--------------- PART-2 (PROMOTING DOMAIN CONTROLLER) ------------------------
+----------- PART-2 (PROMOTING DOMAIN CONTROLLER) -----------
 
 "Deployment Configuration" (Image-1)
 
@@ -89,7 +89,7 @@ Once the reboot has been completed you will notice your username to login has be
 
 
 
--------------- SHOW-CASE OF PROMOTED DOMAIN CONTROLLER ------------------------
+----------- SHOW-CASE OF PROMOTED DOMAIN CONTROLLER -----------
 
 ActiveDirectory Configured (Image-10)
 - In ServerManager click on tools
@@ -116,7 +116,7 @@ in later steps we will create our user and security group
 
 
 
--------------- PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES ------------------------
+----------- PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES -----------
 
 Folder path: ESXi_Part3
 
@@ -186,7 +186,7 @@ Step 4:
 
 
 
--------------- PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host -----------------------------
+----------- PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host -----------
 Folder path: ESXi_Part4
 
 
@@ -216,7 +216,7 @@ Step 7: "Highlight and press Enter on "Test Management Network"
  - Resolve Hostname: Enter Hostname configured in Forward Lookup Zone step.
 
 
--------------- PART-5 ENABLE SETTINGS IN ESXi WEB CONSOLE -----------------------------
+-------------- PART-5 ENABLE SETTINGS IN ESXi WEB CONSOLE --------------
 
 Step 1: In the ESXi host enable the following services DCUI, TSM-SSH, Active Directory all
 [Manage]
@@ -235,7 +235,7 @@ Step 3: In ESXi Host, go to time & date settings, configure NTP server.
 
 
 
--------------- PART-6 CONNECT TO DOMAIN CONTROLLER -----------------------------
+-------------- PART-6 CONNECT TO DOMAIN CONTROLLER --------------
 
 
 Step 1: In ESXi Host, go to Authentication and Join domain
@@ -248,7 +248,7 @@ Step 1: In ESXi Host, go to Authentication and Join domain
 
 
 
--------------- PART-7 ADD ADDITIONAL AD USERS TO ESXi -----------------------------
+-------------- PART-7 ADD ADDITIONAL AD USERS TO ESXi --------------
 
 Step 7: In ESXi Host, under Host settings add the specified user or group.
 Click:  Host

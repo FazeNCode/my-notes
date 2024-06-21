@@ -27,15 +27,29 @@ pvdisplay
 
 
 Volume-Group
+
+vgdisplay command display the current Volume groups
+```
 vgdisplay
-To display the current Volume groups
-vgcreate vgname /dev/partition-name
+```
+
+
 To create a Volume group
+```
+vgcreate vgname /dev/partition-name
+```
+
+
 
 
 Logical-Volume
-lvdisplay
+
 To display current Logical Volume
+```
+lvdisplay
+```
+
+
 lvcreate -L 2G -n lvname/vgname  
 To create a Logical volume 
 lvresize --size 1G /dev/volume/logical
