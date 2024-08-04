@@ -1,3 +1,4 @@
+<h1> What is Katello</h1>
 
 Red Hat Satellite version 5 is based on SpaceWalk, the current version of Red Hat Satellite 6 is based on foreman with katello plugins. 
 The most important core components are 
