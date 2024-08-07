@@ -74,6 +74,7 @@ nmtui
 ```
 
 Display a cheat-sheet for nmcli configuration
+
 ```
 curl cheat.sh/nmcli
 ```
