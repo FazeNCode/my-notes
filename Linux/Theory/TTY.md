@@ -8,8 +8,9 @@ Users can open multiple terminal sessions, for example you can use F3, F4, F5.. 
 
 Switching to the different terminal session, is same key-binding as starting new terminal session.
 
-
+```
 systemctl stop getty@tty2.service
+```
 To stop the terminal service run the command above
 
 
