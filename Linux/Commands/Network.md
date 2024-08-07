@@ -73,6 +73,7 @@ The Graphic User Interface (GUI) version of nmcli
 nmtui
 ```
 
+<br>
 Display a cheat-sheet for nmcli configuration
 
 ```
