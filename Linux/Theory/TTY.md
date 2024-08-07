@@ -4,6 +4,13 @@ TeleTypeWriter (TeleType)
 CTRL + ALT + F2
 Opens up another terminal session, this is usefull when you want to have multiple sessions without installing terminal multiplexer like tmux or screen.
 
+Run the command below to display which tty you are currently in.
+```
+tty
+```
+
+<br>
+
 Users can open multiple terminal sessions, for example you can use F3, F4, F5.. and so on, to utilize multiple sessions
 
 Switching to the different terminal session, is same key-binding as starting new terminal session.
