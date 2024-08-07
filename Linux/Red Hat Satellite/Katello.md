@@ -1,6 +1,8 @@
 <h1> What is Katello</h1>
 Katello is an open source version of Red Hat Satellite.
-You may be wondering well what is Red Hat Satellite, well RedHat Satellite is a paid subscripation manager which allows patch management / configuration for redhat servers 
+You may be wondering well what is Red Hat Satellite 🧐.
+<br>
+Well RedHat Satellite is a paid subscripation manager which allows patch management / configuration for redhat servers 
 
 Red Hat Satellite version 5 is based on SpaceWalk, the current version of Red Hat Satellite 6 is based on foreman with katello plugins. 
 The most important core components are 
