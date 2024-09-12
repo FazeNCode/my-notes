@@ -123,7 +123,10 @@ in later steps we will create our user and security group
 
 Folder path: ESXi_Part3
 
+<br>
 ==== Pre-configuration DNS SETUP (OPTIONAL) ==== 
+<br>
+
 Before Configuring DNS records, it's recommended to configure a static IP Address instead of DHCP, this is so there is no potential conflict in the later steps.
 
 In Server Manager under Dashboard, 
@@ -141,8 +144,8 @@ Inside Ethernet0 properties
 
 Inside Internet Protocol Version 4 (TCP/IPv4) Properties 
 - Click on "Use the following IP address: 	Image: Pre_DNS_conifurationIPv4(0.3)
- - Input your desired static I.P address
- - If you are not sure about your network information, use the ipconfig command in the cmd.
+- Input your desired static I.P address
+- If you are not sure about your network information, use the ipconfig command in the cmd.
  In my example I changed my I.P Address last octet from 192.168.244.141 >> 192.168.244.142
 You can also input 192.168.244.141 as your static I.P Address in TCP/IPV4 Properties, it's personal preference 
 
