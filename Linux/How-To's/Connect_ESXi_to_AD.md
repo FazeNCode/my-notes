@@ -5,7 +5,7 @@ Grant any specific user's with certain permissions to access ESXi configuration 
 For example if a user named "Christy" job involves her to manage Virtual machines and Data Store, we can specifically grant access to those specified categories based on her work load. This tightens the security measures.
 
 
------------ PART-1 Adding "Roles and Features" (AD | DNS) -----------
+---- PART-1 Adding "Roles and Features" (AD | DNS) ----
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
@@ -53,6 +53,7 @@ Click on Promote this server to a domain controller
 
 
 <br>
+<br> 
 
 ---- PART-2 (PROMOTING DOMAIN CONTROLLER) ----
 
@@ -116,6 +117,7 @@ in later steps we will create our user and security group
 
 
 <br>
+<br> 
 
 ---- PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES ----
 
@@ -149,13 +151,13 @@ Once Configured
 
 
 Step 1:
-=== DNS Record SETUP =====
+=== DNS Record SETUP ===
 - Click on tools in Server Manager.
 - Click "DNS" in the Tools drop down menu.
 
 
 Step 2: 
-=== Inside DNS Manager ====
+=== Inside DNS Manager ===
 - Click on "DNS"
 - Click on the arrow beside your computer name to expand.
 
@@ -177,18 +179,18 @@ Step 4:
 - Click and expand Forward Lookup Zones
 - Click on your Domain Controller. for example mine is "WindowServ.local"
 - Right Click inside & Select "New Host (A or AAAA)"
- - Give a suitable hostname of your choice.
- - Give a suitable IP address associated.
-- Make sure to k
+- Give a suitable hostname of your choice.
+- Give a suitable IP address associated.
+- Check PTR Record
 
   Inside Forward Lookup zone right click
 
 
+<br>
+<br> 
 
-
-
------------ PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host -----------
-Folder path: ESXi_Part4
+---- PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host ----
+Folder path for images: ESXi_Part4
 
 
 Step 1: In the ESXi press F2 on keyboard to edit settings,
