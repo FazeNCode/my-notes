@@ -52,8 +52,9 @@ Click on Promote this server to a domain controller
 
 
 
+<br>
 
------------ PART-2 (PROMOTING DOMAIN CONTROLLER) -----------
+---- PART-2 (PROMOTING DOMAIN CONTROLLER) ----
 
 "Deployment Configuration" (Image-1)
 
@@ -87,9 +88,9 @@ With all the pre-configured steps we've done in part 1 we should be in the clear
 Once completed you will be signed out and the windows server will reboot automatically.
 Once the reboot has been completed you will notice your username to login has been updated.
 
+<br>
 
-
------------ SHOW-CASE OF PROMOTED DOMAIN CONTROLLER -----------
+---- SHOW-CASE OF PROMOTED DOMAIN CONTROLLER ----
 
 ActiveDirectory Configured (Image-10)
 - In ServerManager click on tools
@@ -114,13 +115,13 @@ Active users and Computers (Users)
 in later steps we will create our user and security group
 
 
+<br>
 
-
------------ PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES -----------
+---- PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES ----
 
 Folder path: ESXi_Part3
 
-========== Pre-configuration DNS SETUP (OPTIONAL) ========== 
+==== Pre-configuration DNS SETUP (OPTIONAL) ==== 
 Before Configuring DNS records, it's recommended to configure a static IP Address instead of DHCP, this is so there is no potential conflict in the later steps.
 
 In Server Manager under Dashboard, 
