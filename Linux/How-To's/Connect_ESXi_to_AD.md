@@ -1,35 +1,38 @@
 <h3> How To Connect ESXi Host version 7 to Active directory </h3>
 
-How is Connecting ESXI to an Active directory beneficial?
+Why is connecting ESXI to an Active directory beneficial?
+<br>
 Grant any specific user's with certain permissions to access ESXi configuration management.
 For example if a user named "Christy" job involves her to manage Virtual machines and Data Store, we can specifically grant access to those specified categories based on her work load. This tightens the security measures.
 
-
----- PART-1 Adding "Roles and Features" (AD | DNS) ----
+<br>
+<br>
+---- PART-1 Adding "Roles and Features" (Active Direocty | DNS) ----
+<br>
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
-- Click on "Add Roles and Features" 
+  - Click on "Add Roles and Features" 
 
-Step 2
-"Before you Begin" 
+Step 2: "Before you Begin" 
+<br>
 - Click Next
 
-Step 3
-"Installation Type"
+Step 3: "Installation Type"
+<br>
 - Select "Role based or feature-based installation"
-- Click "Next"
+  - Click "Next"
 
-Step 4:
-"Server Selection"
+Step 4: "Server Selection"
+<br>
 - Select "Select a server from the server pool"
-- Select "Your windows server name".  NOTE: This can be changed to the desired name.
+  - Select "Your windows server name".  NOTE: This can be changed to the desired name.
 
 Step 5: "Server Roles"
 - Select "Active Directory Domain Services"
- - Click Add Feature
+  - Click Add Feature
 - Select "DNS Server"
- - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
+  - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
 - Click "Next"
 
 
