@@ -17,6 +17,10 @@ Switching to the different terminal session, is same key-binding as starting new
 
 <br>
 
+
+GETTY
+Get Terminal Type is an essesntial program in all linux distrobutions. 
+<br>
 To stop the terminal service run the command above
 ```
 systemctl stop getty@tty2.service
@@ -24,17 +28,14 @@ systemctl stop getty@tty2.service
 
 
 
-
-GETTY
-Get Terminal Type is an essesntial program in all linux distrobutions. 
-
-
-
-source ~/.bashrc
 The source command is used to refresh or reload the bash configuration for the current shell.
+```
+source ~/.bashrc
+```
 
 
-
-
-yes "some-text" | head -n 200 >> file.txt
 yes command is used to output multiple pieces of text into a file, usually used in scripts.
+```
+yes "some-text" | head -n 200 >> file.txt
+```
+
