@@ -203,13 +203,13 @@ Step 1: In the ESXi press F2 on keyboard to edit settings,
 Step 2: Highlight and press Enter on "Configure Management Network" 
 Step 3: Edit "DNS Configuration" settings
  - Primary DNS Server:
-  - I.P Address of domain controller (Window Server)
+   - I.P Address of domain controller (Window Server)
 
  - Alternative DNS Server: 
-  - Leave empty
+   - Leave empty
 
  - Hostname:
-  - Enter the hostname created in Step 3, Forward Lookup zone
+   - Enter the hostname created in Step 4, Forward Lookup zone
   
 Step 4: Edit "Custom DNS Suffixes"
  - Enter localdomain, Domain Controller, FQDN
@@ -253,6 +253,15 @@ Step 1: In ESXi Host, go to Authentication and Join domain
     - User Name: Administrator
 
 
+<br>
+
+IMPORTANT: Before moving onto PART-7
+<br>
+In Active Drirectory Users and Computers
+ - Right click: on Domain Controller
+   - Create group
+   - Group Name: ESX Admins
+   
 <br>
 
 -------------- PART-7 ADD ADDITIONAL AD USERS TO ESXi --------------
