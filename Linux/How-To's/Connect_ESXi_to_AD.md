@@ -224,9 +224,9 @@ Step 7: "Highlight and press Enter on "Test Management Network"
  - Ping Address #1: Enter I.P of Domain controller (Window Server)
  - Resolve Hostname: Enter Hostname configured in Forward Lookup Zone step.
 
+<br>
 
 -------------- PART-5 ENABLE SETTINGS IN ESXi WEB CONSOLE --------------
-
 Step 1: In the ESXi host enable the following services DCUI, TSM-SSH, Active Directory all
 [Manage]
 Services:
@@ -242,11 +242,9 @@ Step 3: In ESXi Host, go to time & date settings, configure NTP server.
   - IP of domain controller 
 	- 192.168.244.140
 
-
+<br>
 
 -------------- PART-6 CONNECT TO DOMAIN CONTROLLER --------------
-
-
 Step 1: In ESXi Host, go to Authentication and Join domain
 - Manage
   - Authentication
@@ -255,14 +253,14 @@ Step 1: In ESXi Host, go to Authentication and Join domain
     - User Name: Administrator
 
 
-
+<br>
 
 -------------- PART-7 ADD ADDITIONAL AD USERS TO ESXi --------------
-
 Step 7: In ESXi Host, under Host settings add the specified user or group.
-Click:  Host
-Click:  Actions, with the gear symbol
-Click: Permissions
-Click: Add user
+Click:  
+- Host
+  - Actions, with the gear symbol
+  - Permissions
+   - Add user
      - faze@win.local
      - win.local\group-name
