@@ -19,40 +19,36 @@ In Windows Server, open up Server Manager Dashboard
   - Click on "Add Roles and Features" 
 <img src="https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png" alt="Open Server Manager" />
 
-
 <br>
 <br>
 
 Step 2: "Before you Begin" 
-
-<br>
-
 - Click Next
-<br>
-<br>
-
 <img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(2).png" />
 
 <br>
 <br>
 
 Step 3: "Installation Type"
-<br>
 - Select "Role based or feature-based installation"
   - Click "Next"
-<br>
-<br>
-
 <img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(3).png" />
 
+<br>
+<br>
 
 Step 4: "Server Selection"
 <br>
 - Select "Select a server from the server pool"
   - Select "Your windows server name".  NOTE: This can be changed to the desired name.
-
 <img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4).png" />
 
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4.5).png" />
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4.6).png" />
+
+<br>
+<br>
 
 Step 5: "Server Roles"
 - Select "Active Directory Domain Services"
@@ -61,8 +57,11 @@ Step 5: "Server Roles"
   - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
 - Click "Next"
 
-
 <img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(5).png" />
+
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_Adding_ActiveDirectory_(5.5).png" />
+
 
 "Features"
 - Click Next
@@ -82,20 +81,30 @@ Step 5: "Server Roles"
 Click on Promote this server to a domain controller
 
 
+<br>
+<br> 
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_promote_domain_controller_(13).png" />
+
+
+
+---- PART-2 (PROMOTING DOMAIN CONTROLLER) ----
+
+Step 1: "Deployment Configuration"
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi_Part-2_DomainController/Promote_DomainController_(1)_Config.png" />
 
 <br>
 <br> 
 
----- PART-2 (PROMOTING DOMAIN CONTROLLER) ----
-
-"Deployment Configuration" (Image-1)
-
-"Domain Controller Options" (Image-2)
+Step 2: "Domain Controller Options" 
 - Select Domain name system
 - Select Global Catalog 
 The two above should already be selected by default, but in case they are not, make sure to select them
 - Enter a password
 
+<br>
+<br> 
 
 "DNS Options" (Image-3)
 - Click Next
