@@ -7,8 +7,12 @@ For example if a user named "Christy" job involves her to manage Virtual machine
 
 <br>
 <br>
+
 ---- PART-1 Adding "Roles and Features" (Active Direocty | DNS) ----
+
 <br>
+<br>
+
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
@@ -21,21 +25,37 @@ In Windows Server, open up Server Manager Dashboard
 
 <br>
 <br>
-Step 2: "Before you Begin" 
-<br>
-- Click Next
 
-<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(10).png" alt="Open Server Manager" />
+Step 2: "Before you Begin" 
+
+<br>
+
+- Click Next
+<br>
+<br>
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(2).png" />
+
+<br>
+<br>
 
 Step 3: "Installation Type"
 <br>
 - Select "Role based or feature-based installation"
   - Click "Next"
+<br>
+<br>
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(3).png" />
+
 
 Step 4: "Server Selection"
 <br>
 - Select "Select a server from the server pool"
   - Select "Your windows server name".  NOTE: This can be changed to the desired name.
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4).png" />
+
 
 Step 5: "Server Roles"
 - Select "Active Directory Domain Services"
@@ -44,6 +64,8 @@ Step 5: "Server Roles"
   - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
 - Click "Next"
 
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(5).png" />
 
 "Features"
 - Click Next
