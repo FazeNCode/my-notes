@@ -16,26 +16,16 @@ In Windows Server, open up Server Manager Dashboard
 
 <br>
 <br>
-
-
-![Open Server Manager](https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png)
-
-<br>
-<br>
-
-![Alt text](https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png)
-
-
-<br>
-<br>
-
 <img src="https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png" alt="Open Server Manager" />
 
 
 <br>
+<br>
 Step 2: "Before you Begin" 
 <br>
 - Click Next
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(10).png" alt="Open Server Manager" />
 
 Step 3: "Installation Type"
 <br>
