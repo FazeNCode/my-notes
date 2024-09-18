@@ -15,9 +15,14 @@ In Windows Server, open up Server Manager Dashboard
   - Click on "Add Roles and Features" 
 
 <br>
+<br>
+
+
 ![Open Server Manager](https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png)
 
 <br>
+<br>
+
 ![Alt text](https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png)
 
 
