@@ -13,7 +13,9 @@ Step 1
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
   - Click on "Add Roles and Features" 
+![Open Server Manager](https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png)
 
+<br>
 Step 2: "Before you Begin" 
 <br>
 - Click Next
