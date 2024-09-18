@@ -27,6 +27,12 @@ In Windows Server, open up Server Manager Dashboard
 
 
 <br>
+<br>
+
+<img src="https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png" alt="Open Server Manager" />
+
+
+<br>
 Step 2: "Before you Begin" 
 <br>
 - Click Next
