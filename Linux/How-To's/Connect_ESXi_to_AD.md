@@ -11,15 +11,12 @@ For example if a user named "Christy" job involves her to manage Virtual machine
 ---- PART-1 Adding "Roles and Features" (Active Direocty | DNS) ----
 
 <br>
-<br>
+
 
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
   - Click on "Add Roles and Features" 
-
-<br>
-<br>
 <img src="https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png" alt="Open Server Manager" />
 
 
