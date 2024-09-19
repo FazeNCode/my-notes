@@ -36,8 +36,7 @@ Clones a remote repository to your local machine by giving the path (URL) of you
 git clone https://github.com/Clone/Repo 
 ```
 
-
-
+<br>
 
 <h2> Configuring git user: </h2>
 
@@ -81,6 +80,7 @@ Configure remote repository to local repository, with github auth key
 git remote set-url origin https://ghp_WkPLvKSUCT1J0ee9Hm5k91SXDGA@github.com/FazeNCode/rhelproj
 ```
 
+<br>
 
 <h2> Git Errors: </h2>
 
