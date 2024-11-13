@@ -1,0 +1,8 @@
+<h2> Essential Window commands </h2>
+
+
+If you want to change the name of a existing file or directory on Windows, use the ren command  
+
+```
+ren current-dir-name new-dirname
+```
