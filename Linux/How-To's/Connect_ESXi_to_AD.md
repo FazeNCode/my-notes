@@ -1,36 +1,66 @@
 <h3> How To Connect ESXi Host version 7 to Active directory </h3>
 
-How is Connecting ESXI to an Active directory beneficial?
+Why is connecting ESXI to an Active directory beneficial?
+<br>
 Grant any specific user's with certain permissions to access ESXi configuration management.
 For example if a user named "Christy" job involves her to manage Virtual machines and Data Store, we can specifically grant access to those specified categories based on her work load. This tightens the security measures.
 
+<br>
+<br>
 
------------ PART-1 Adding "Roles and Features" (AD | DNS) -----------
+---- PART-1 Adding "Roles and Features" (Active Direocty | DNS) ----
+
+<br>
+
+
 Step 1 
 In Windows Server, open up Server Manager Dashboard 
 - Click on "Manage" next to "Tools"
-- Click on "Add Roles and Features" 
+  - Click on "Add Roles and Features" 
+<img src="https://raw.githubusercontent.com/FazeNCode/Images-Repository/main/Virtualization/VmWare/ESXi/ServerManager_(1).png" alt="Open Server Manager" />
 
-Step 2
-"Before you Begin" 
+<br>
+<br>
+
+Step 2: "Before you Begin" 
 - Click Next
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(2).png" />
 
-Step 3
-"Installation Type"
+<br>
+<br>
+
+Step 3: "Installation Type"
 - Select "Role based or feature-based installation"
-- Click "Next"
+  - Click "Next"
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(3).png" />
 
-Step 4:
-"Server Selection"
+<br>
+<br>
+
+Step 4: "Server Selection"
+<br>
 - Select "Select a server from the server pool"
-- Select "Your windows server name".  NOTE: This can be changed to the desired name.
+  - Select "Your windows server name".  NOTE: This can be changed to the desired name.
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4).png" />
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4.5).png" />
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(4.6).png" />
+
+<br>
+<br>
 
 Step 5: "Server Roles"
 - Select "Active Directory Domain Services"
- - Click Add Feature
+  - Click Add Feature
 - Select "DNS Server"
- - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
+  - Click Add Feature. NOTE: WE CAN CHANGE THE I.P TO A STATIC IP SO THERE WON'T BE ANY CONFLICT WITH DHCP
 - Click "Next"
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_(5).png" />
+
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_Adding_ActiveDirectory_(5.5).png" />
 
 
 "Features"
@@ -51,18 +81,30 @@ Step 5: "Server Roles"
 Click on Promote this server to a domain controller
 
 
+<br>
+<br> 
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi/ServerManager_promote_domain_controller_(13).png" />
 
 
------------ PART-2 (PROMOTING DOMAIN CONTROLLER) -----------
 
-"Deployment Configuration" (Image-1)
+---- PART-2 (PROMOTING DOMAIN CONTROLLER) ----
 
-"Domain Controller Options" (Image-2)
+Step 1: "Deployment Configuration"
+
+<img src="https://github.com/FazeNCode/Images-Repository/blob/main/Virtualization/VmWare/ESXi_Part-2_DomainController/Promote_DomainController_(1)_Config.png" />
+
+<br>
+<br> 
+
+Step 2: "Domain Controller Options" 
 - Select Domain name system
 - Select Global Catalog 
 The two above should already be selected by default, but in case they are not, make sure to select them
 - Enter a password
 
+<br>
+<br> 
 
 "DNS Options" (Image-3)
 - Click Next
@@ -87,9 +129,9 @@ With all the pre-configured steps we've done in part 1 we should be in the clear
 Once completed you will be signed out and the windows server will reboot automatically.
 Once the reboot has been completed you will notice your username to login has been updated.
 
+<br>
 
-
------------ SHOW-CASE OF PROMOTED DOMAIN CONTROLLER -----------
+---- SHOW-CASE OF PROMOTED DOMAIN CONTROLLER ----
 
 ActiveDirectory Configured (Image-10)
 - In ServerManager click on tools
@@ -114,13 +156,17 @@ Active users and Computers (Users)
 in later steps we will create our user and security group
 
 
+<br>
+<br> 
 
-
------------ PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES -----------
+---- PART-3 CONFIG FORWARD & REVERSE LOOKUP ZONES ----
 
 Folder path: ESXi_Part3
 
-========== Pre-configuration DNS SETUP (OPTIONAL) ========== 
+<br>
+==== Pre-configuration DNS SETUP (OPTIONAL) ==== 
+<br>
+
 Before Configuring DNS records, it's recommended to configure a static IP Address instead of DHCP, this is so there is no potential conflict in the later steps.
 
 In Server Manager under Dashboard, 
@@ -138,8 +184,8 @@ Inside Ethernet0 properties
 
 Inside Internet Protocol Version 4 (TCP/IPv4) Properties 
 - Click on "Use the following IP address: 	Image: Pre_DNS_conifurationIPv4(0.3)
- - Input your desired static I.P address
- - If you are not sure about your network information, use the ipconfig command in the cmd.
+- Input your desired static I.P address
+- If you are not sure about your network information, use the ipconfig command in the cmd.
  In my example I changed my I.P Address last octet from 192.168.244.141 >> 192.168.244.142
 You can also input 192.168.244.141 as your static I.P Address in TCP/IPV4 Properties, it's personal preference 
 
@@ -148,13 +194,13 @@ Once Configured
 
 
 Step 1:
-=== DNS Record SETUP =====
+=== DNS Record SETUP ===
 - Click on tools in Server Manager.
 - Click "DNS" in the Tools drop down menu.
 
 
 Step 2: 
-=== Inside DNS Manager ====
+=== Inside DNS Manager ===
 - Click on "DNS"
 - Click on the arrow beside your computer name to expand.
 
@@ -176,31 +222,31 @@ Step 4:
 - Click and expand Forward Lookup Zones
 - Click on your Domain Controller. for example mine is "WindowServ.local"
 - Right Click inside & Select "New Host (A or AAAA)"
- - Give a suitable hostname of your choice.
- - Give a suitable IP address associated.
-- Make sure to k
+- Give a suitable hostname of your choice.
+- Give a suitable IP address associated.
+- Check PTR Record
 
   Inside Forward Lookup zone right click
 
 
+<br>
+<br> 
 
-
-
------------ PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host -----------
-Folder path: ESXi_Part4
+---- PART-4 CONFIGURE DNS SETTINGS FOR ESXi Host ----
+Folder path for images: ESXi_Part4
 
 
 Step 1: In the ESXi press F2 on keyboard to edit settings,
 Step 2: Highlight and press Enter on "Configure Management Network" 
 Step 3: Edit "DNS Configuration" settings
  - Primary DNS Server:
-  - I.P Address of domain controller (Window Server)
+   - I.P Address of domain controller (Window Server)
 
  - Alternative DNS Server: 
-  - Leave empty
+   - Leave empty
 
  - Hostname:
-  - Enter the hostname created in Step 3, Forward Lookup zone
+   - Enter the hostname created in Step 4, Forward Lookup zone
   
 Step 4: Edit "Custom DNS Suffixes"
  - Enter localdomain, Domain Controller, FQDN
@@ -215,9 +261,9 @@ Step 7: "Highlight and press Enter on "Test Management Network"
  - Ping Address #1: Enter I.P of Domain controller (Window Server)
  - Resolve Hostname: Enter Hostname configured in Forward Lookup Zone step.
 
+<br>
 
 -------------- PART-5 ENABLE SETTINGS IN ESXi WEB CONSOLE --------------
-
 Step 1: In the ESXi host enable the following services DCUI, TSM-SSH, Active Directory all
 [Manage]
 Services:
@@ -233,11 +279,9 @@ Step 3: In ESXi Host, go to time & date settings, configure NTP server.
   - IP of domain controller 
 	- 192.168.244.140
 
-
+<br>
 
 -------------- PART-6 CONNECT TO DOMAIN CONTROLLER --------------
-
-
 Step 1: In ESXi Host, go to Authentication and Join domain
 - Manage
   - Authentication
@@ -246,14 +290,23 @@ Step 1: In ESXi Host, go to Authentication and Join domain
     - User Name: Administrator
 
 
+<br>
 
+IMPORTANT: Before moving onto PART-7
+<br>
+In Active Drirectory Users and Computers
+ - Right click: on Domain Controller
+   - Create group
+   - Group Name: ESX Admins
+   
+<br>
 
 -------------- PART-7 ADD ADDITIONAL AD USERS TO ESXi --------------
-
 Step 7: In ESXi Host, under Host settings add the specified user or group.
-Click:  Host
-Click:  Actions, with the gear symbol
-Click: Permissions
-Click: Add user
+Click:  
+- Host
+  - Actions, with the gear symbol
+  - Permissions
+   - Add user
      - faze@win.local
      - win.local\group-name
