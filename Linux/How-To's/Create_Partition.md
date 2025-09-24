@@ -2,7 +2,7 @@
 
 
 Use the fdisk command to enter the setup for creating a partition. 
-Note: If you don't know your disk name, use the lsblk to list out your disks
+Note: If you don't know your disk name, use the ```lsblk``` to list out your disks
 
 ```
 fdisk /dev/your-disk-name
@@ -49,12 +49,26 @@ To display current Logical Volume
 lvdisplay
 ```
 
+To Create the Logical volume 
 
+```
 lvcreate -L 2G -n lvname/vgname  
-To create a Logical volume 
-lvresize --size 1G /dev/volume/logical
+```
+
 To resize the logical volume
-lvextend -r -L +2G /dev/volume/logical
+```
+lvresize --size 1G /dev/volume/logical
+```
+
 To extend the logical volume 
-lvremove /dev/volume/logical
+```
+lvextend -r -L +2G /dev/volume/logical
+```
+
 To remove the logical volume
+```
+lvremove /dev/volume/logical
+```
+
+In the image below you can see the nfs-client lvm is not present, This is because we have not created a file system  yet.
+
