@@ -70,5 +70,9 @@ To remove the logical volume
 lvremove /dev/volume/logical
 ```
 
-In the image below you can see the nfs-client lvm is not present, This is because we have not created a file system  yet.
+
+mount -a 
+
+
+In the image below you can see the nfs-client lvm is not present, This is because we have not created a file system yet.
 
